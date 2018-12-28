@@ -7,7 +7,7 @@
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
+#
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
@@ -15,8 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: Giuseppe Silano
 email: giuseppe.silano@unisannio.it
-description: Personal website of Giuseppe Silano>- # this means to ignore newlines until "baseurl:"
-  Some thoughts on work and life
+description: >- # this means to ignore newlines until "baseurl:"
+  Personal website of Giuseppe Silano
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://giuseppesilano.net" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  gsilano
