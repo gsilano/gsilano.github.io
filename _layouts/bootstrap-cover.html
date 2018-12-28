@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Giuseppe Silano - {{ page.title }}</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- For inserting emojis -->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet"/>
+    
+    <!--  for using font-awesome icons (with bootstrap) -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  
+    <!-- My Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="/css/cover.css"/>
+		
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:200,400" rel="stylesheet">
+  
+
+  </head>
+  <body>
+  
+  <!-- Cookies banner -->
+	<script id="ce-banner-html">
+		  <p style="text-align: center;" class="ce-banner">
+			<b>By the Italian law I must tell you that my site uses <em>third-party cookies</em>. If you click outside this banner or scroll down the page, you accept 
+			my cookies and you can continue the navigation. <br><a href="#" class="ce-accept"><b>OK, let&rsquo;s go</b></a> Otherwise <a href="/cookies.html" style='color:yellow'>
+			Read More</a> on how to disable them.</b>
+			<!-- <a href="#" class="ce-dismiss">X</a> -->
+		  </p>
+	</script>
+
+	<!-- Load the script -->
+	<script src="/files/cookies-enabler.js"></script>
+	<!-- Init the script -->
+	<script>
+		  COOKIES_ENABLER.init({
+		  bannerClass: 'ce-banner-html',
+		  eventScroll: true,
+		  scrollOffset: 400,
+		  clickOutside: true
+		  });
+	</script>
+	<!-- End cookies banner -->
+  
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div class="masthead clearfix">
+            <div class="inner">
+              <nav>
+              <h3 class="masthead-brand">                  
+                <a href="/index.html">Hi, I'm Giuseppe!</a>            
+              </h3>
+			 
+	      
+              <ul class="nav masthead-nav">
+		<li {% if page.title== "CV" %} class="active"{% endif %}>	  
+			  <a href="/cv.html">CV</a>
+	    </li>
+	    <li {% if page.title== "Research" %} class="active"{% endif %}>
+			  <a href="/research.html">Research</a>
+		</li>
+		<li {% if page.title== "Software"  %} class="active"{% endif %}>
+	          <a href="/software.html"> Software</a>
+	        </li>
+		<li {% if page.title== "Publications"  %} class="active"{% endif %}>
+		  <a href="/publications.html"> Publications</a>
+		</li>
+		<li {% if page.title== "Info"  %} class="active"{% endif %}>
+                  <a href="/info.html"> Info</a>
+        </li> 				  
+	      </ul>
+
+	      </nav>
+            </div>
+          </div>
+
+          <div class="inner">
+            {{ content }}
+          </div>
+
+          <div class="mastfoot"">
+            <div class="inner">
+	                 
+	            <p style="text-align: center">
+	              <img align="bottom" src="/images/icons/in.png" class="rss opacity" style="width:15px">                                                       
+	              <a target="_blank" href="https://www.linkedin.com/in/giuseppe-silano-235370b5/?locale=en_US" title="LinkedIn">LinkedIn</a>
+	              &nbsp&middot&nbsp
+	              <span class="fa fa-github" aria-hidden="true" title="Github"></span>                                                  
+	              <a target="_blank" href="https://github.com/gsilano" title="Github">Github</a>
+	              &nbsp&middot&nbsp
+	              <img align="bottom" src="/images/icons/ghat.png" class="rss opacity" style="width: 15px;" align="bottom">                                    
+	              <a target="_blank" href="https://scholar.google.it/citations?user=lrTdWB0AAAAJ&hl=en" title="Google Scholar">Google Scholar</a>
+				  &nbsp&middot&nbsp
+	              <img align="bottom" src="/images/icons/researchgate.png" class="rss opacity" style="width:14px"> 
+	              <a target="_blank" href="https://www.researchgate.net/profile/Giuseppe_Silano" title="Researchgate">Researchgate</a>
+				  &nbsp&middot&nbsp
+	              <span class="fa fa-youtube" aria-hidden="true" title="YouTube"></span>   
+	              <a target="_blank" href="https://www.youtube.com/channel/UC33d3qW1EU4jH1fi36Hzc1Q" title="YouTube">YouTube</a>
+				  &nbsp&middot&nbsp
+	              <img align="bottom" src="/images/icons/orcid.png" class="rss opacity" style="width:14px"> 
+	              <a target="_blank" href="https://orcid.org/0000-0002-6816-6002" title="ORCID">ORCID</a>
+	            </p>
+	                 
+	            <p style="text-align: center">
+                © 2018 Giuseppe Silano. Built with <a href="https://jekyllrb.com/">Jekyll</a> 
+                and <a href="http://getbootstrap.com">Bootstrap</a>. Based on a design by <a href="https://awinkler.github.io/index.html">Alexander W. Winkler</a>.
+              </p> 
+			  
+			     <!-- Histats.com  START  (aync)-->
+				<script type="text/javascript">var _Hasync= _Hasync|| [];
+				_Hasync.push(['Histats.start', '1,4197054,4,0,0,0,00010000']);
+				_Hasync.push(['Histats.fasi', '1']);
+				_Hasync.push(['Histats.track_hits', '']);
+				(function() {
+				var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+				hs.src = ('//s10.histats.com/js15_as.js');
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+				})();</script>
+				<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4197054&101" alt="contatore accessi free" border="0"></a></noscript>
+				<!-- Histats.com  END  -->
+               
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

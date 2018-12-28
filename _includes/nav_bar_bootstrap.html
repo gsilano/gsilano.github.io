@@ -1,0 +1,21 @@
+ <nav class="navbar navbar-default">
+   <div class="container">
+     <div class="navbar-header">
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="#">Giuseppe Silano</a>
+     </div>
+     <div id="navbar" class="collapse navbar-collapse">
+       <ul class="nav navbar-nav">
+           <!-- Lighten up button depending on which site is visited -->
+           <li {% if page.title=="Home"     %} class="active" {% endif %}> <a href="index.html">   Home</a> </li>
+           <li {% if page.title=="Research" %} class="active" {% endif %}> <a href="research.html">Research</a></li>
+           <li {% if page.title=="Contact"  %} class="active" {% endif %}> <a href="contact.html"> Contact</a></li>
+       </ul>
+     </div><!--/.nav-collapse -->
+   </div>
+ </nav>

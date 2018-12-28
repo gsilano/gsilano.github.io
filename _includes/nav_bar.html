@@ -1,0 +1,17 @@
+  <!-- Navigation Menu (Home, Research, Contact, ..) -->
+  <div id="nav-wrap">
+    <div class="container">
+      <table id="nav-table">
+        <tr>
+          <td>
+            <ul class='wsite-menu-default'>
+              <!-- Lighten up button depending on which site is visited -->
+              <li {% if page.title=="Home"     %} id="active" {% endif %}> <a href="index.html">   Home</a> </li>
+              <li {% if page.title=="Research" %} id="active" {% endif %}> <a href="research.html">Research</a></li>
+              <li {% if page.title=="Contact"  %} id="active" {% endif %}> <a href="contact.html"> Contact</a></li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
