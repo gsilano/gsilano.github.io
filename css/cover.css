@@ -192,10 +192,6 @@ p { margin-bottom: 1em; }
 
 
 
-/*
- * Some image magic
- */
- /*Filter styles*/
 .saturate {-webkit-filter: saturate(3); filter: saturate(3);}
 .grayscale {-webkit-filter: grayscale(100%); filter: grayscale(100%);}
 .contrast {-webkit-filter: contrast(160%); filter: contrast(160%);}
@@ -212,9 +208,6 @@ span {
   line-height: normal;
 }
 
-/*
- * So my youtube video and ICRA presentations aren't so far apart
- */
 .vidstylepadding {
 	padding-right:  2px;
 	padding-left:  2px;
