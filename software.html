@@ -15,13 +15,13 @@ title: Software
     <p class="lead" style="text-align:justify">
 	  <font size="-0.5">
       <b>CrazyS</b> is an extension of the ROS package <a target="_blank" href="https://github.com/ethz-asl/rotors_simulator" 
-	  	title="RotorS"><b>RotorS</b></a>, aimed to modeling, developing and integrating the Crazyflie 2.0 nano-quadcopter in the 
-	  	physics based simulation  environment Gazebo. Such simulation platform allows to understand quickly the behavior of 
-			the flight control system by comparing and evaluating different indoor and outdoor scenarios, with a details level 
-			quite close to reality. The proposed extension, running on Kinetic Kame ROS version but fully compatible with the 
-			Indigo Igloo one, expands the RotorS capabilities by considering the Crazyflie 2.0 physical model, its flight control 
-			system and the Crazyflie’s on-board IMU, as wellThe contribution can be also considered as a reference guide for 
-			expanding the RotorS functionalities in the UAVs field, by facilitating the integration of new aircrafts.
+			title="RotorS"><b>RotorS</b></a>, aimed to modeling, developing and integrating the Crazyflie 2.0 nano-quadcopter in the 
+			physics based simulation  environment Gazebo. Such simulation platform allows to understand quickly the behavior of the 
+			flight control system by comparing and evaluating different indoor and outdoor scenarios, with a details level quite close 
+			to reality. The proposed extension, running on Kinetic Kame ROS version but fully compatible with the Indigo Igloo one, 
+			expands the RotorS capabilities by considering the Crazyflie 2.0 physical model, its flight control system and the 
+			Crazyflie’s on-board IMU, as wellThe contribution can be also considered as a reference guide for expanding the RotorS 
+			functionalities in the UAVs field, by facilitating the integration of new aircrafts.
 
 	<br>
   
@@ -85,14 +85,15 @@ title: Software
     <small class="timestamp text-muted">August 21, 2018 &middot v2018.07.27</small>
     <p class="lead" style="text-align:justify">
 	<font size="-0.5">
-      <b>MAT-Fly</b> provides an easy to use virtual reality environment based on the <a href="https://it.mathworks.com/products/3d-animation.html"><b>
-			MathWorks Virtual Reality (VR) Toolbox</b></a> aimed to simulate flying platforms together with detection and tracking algorithms. The main motivation
-			of this work is to propose the simulation-in-the-loop (SITL) approach for educational purposes within the UAV field. Matlab VR environment is employed 
-			to simulate the behavior of a drone in a 3D environment when detection, tracking, and control algorithms are run. It has been chosen due to the familiarity 
-			that students have with. In this way, the attention can be moved to the classifier, the tracker, the references generator and the trajectory tracking control. 
-			Moreover, the overall architecture is quite modular so that each block can be easily replaced with others thus simplifying the development phase.
-			A simple case study is described below in order to show the effectiveness of the proposed approach.
-
+      <b>MAT-Fly</b> is a numerical simulation platform for multi-rotor aircraft characterized by the ease of use and control development. The platform is based
+			on MATLAB and the <a href="https://it.mathworks.com/products/3d-animation.html"><b>MathWorks Virtual Reality (VR) Toolbox</b></a>  that work together
+			to simulate the behavior of a drone in a 3D environment while tracking a car that moves along a non trivial path. The VR toolbox has been chosen due 
+			to the familiarity that students have with MATLAB and because it allows to move the attention to the classifier, the tracker, the reference generator 
+			and the trajectory tracking control thanks to its simple structure. The overall architecture is quite modular so that each block can be easily replaced 
+			with others by simplifying the development phase and by allowing to add even more functionalities. The platform has been developed using the 2015b release 
+			of MATLAB but it is compatible with any other successive MATLAB release. The MathWorks Computer Vision System Toolbox is needed for running the Simulink 
+			schemes and Matlab scripts.
+			
 	<br>
   
 	  <!-- Place this tag where you want the button to render. STAR -->
@@ -119,15 +120,15 @@ title: Software
     <small class="timestamp text-muted">April 7, 2019 &middot v0.2.1</small>
     <p class="lead" style="text-align:justify">
 	<font size="-0.5">
-      <b>BebopS</b> contains the developed ROS code for the Industrial Challenge of the 26th Mediterranean Conference on Control and Automation
-			(MED’18)<sup><a href="#fn1" id="ref1">1</a></sup>. The code aimed to simulate the dynamics of the Parrot Bebop 2 together with the flight controller (both high and low level) when external disturbances
-			(wind gusts) acting on it. The control algorithms were designed in Matlab/Simulink and validated in Gazebo by using the MathWorks Robotics System Toolbox (RST).
-			Therefore, the repository contains both ROS nodes and launch files needed to simulate the drone behavior when a tracking algorithm is run. Also, on GitHub the glue
-			code written during the challenge to make able the control algorithm to exchange data on the ROS network is available. Such code was needed for sending commands to
-			and receiving data from the aircraft and the Motion Capture (MoCap) systems Vicon. 
-			Furthermore, the repository contains the developing ROS code to connect the controller to the Parrot Sphinx simulator by including the Parrot Bebop
-			onboard firmware in the loop. In this way, details like synchronization, timing issues, fixed-point computation, overflow, divisions-by-zero, can be
-			isolated and investigated in detail.
+      <b>BebopS</b> contains the developed ROS code for the Industrial Challenge of the 26th Mediterranean Conference on Control and Automation	
+			(MED’18)<sup><a href="#fn1" id="ref1">1</a></sup>. The code aimed to simulate the dynamics of the Parrot Bebop 2 together with the flight 
+			controller (both high and low level) when external disturbances (wind gusts) acting on it. The control algorithms were designed in Matlab/Simulink 
+			and validated in Gazebo by using the MathWorks Robotics System Toolbox (RST). Therefore, the repository contains both ROS nodes and launch files needed 
+			to simulate the drone behavior when a tracking algorithm is run. Also, on GitHub the glue code written during the challenge to make able the control 
+			algorithm to exchange data on the ROS network is available. Such code was needed for sending commands to and receiving data from the aircraft and the 
+			Motion Capture (MoCap) systems Vicon. Furthermore, the repository contains the developing ROS code to connect the controller to the Parrot Sphinx 
+			simulator by including the Parrot Bebop onboard firmware in the loop. In this way, details like synchronization, timing issues, fixed-point computation, 
+			overflow, divisions-by-zero, can be isolated and investigated in detail.
 
 	<br>
   
