@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/gsilano/gsilano.github.io.svg?branch=release)](https://travis-ci.com/gsilano/gsilano.github.io)
+[![Build Status](https://travis-ci.org/gsilano/gsilano.github.io.svg?branch=release)](https://travis-ci.org/gsilano/gsilano.github.io)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 # The Giuseppe Silano's website
