@@ -65,5 +65,5 @@ scholar:
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
-#   - vendor/gems/
+#   - vendor/plugins/
 #   - vendor/ruby/

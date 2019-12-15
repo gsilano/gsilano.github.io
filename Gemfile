@@ -14,6 +14,9 @@ gem "jekyll", "~> 3.8.3"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"
 
+# For installing the unicode utils
+gem 'unicode_utils', '~> 1.4.0'
+
 # This allows to use GitHub's icons into the website
 gem 'jekyll-octicons'
 
