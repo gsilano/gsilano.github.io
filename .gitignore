@@ -4,3 +4,5 @@ _site
 .project
 .sass-cache
 Gemfile.lock
+
+dependencies/
