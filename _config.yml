@@ -17,7 +17,7 @@ title: Giuseppe Silano
 email: giuseppe.silano@unisannio.it
 description: >- # this means to ignore newlines until "baseurl:"
   Personal website of Giuseppe Silano
-baseurl: "http://gsilano.github.io" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://giuseppesilano.net" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  gsilano
 
@@ -30,7 +30,6 @@ plugins:
   - jekyll-scholar
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-analytics
   - jemoji
 
 plugins_dir: ./_plugins
