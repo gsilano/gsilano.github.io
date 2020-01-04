@@ -8,38 +8,39 @@ title: Research
 
 	<p class="lead" style="text-align:justify">
 	<font size="-0.5">
-	Currently, I am working on the <b>design and development of algorithms for autonomous systems in 3D simulation environments</b>,
-	such as Gazebo, Matlab Virtual Reality (VR) Toolbox, by using detection and tracking algorithms (e.g., Viola-Jones and CAM-Shift,
-	respectively) and a properly operating system, i.e., ROS (Robotic Operating System) for analyzing and controlling the behavior of
-	small Unmanned Aerial Vehicles (UAVs) systems (aka with the acronym MAV which stands for Micro Aerial Vehicle).
-	</font></p>
+	Aerial robotics is a fast-growing field of robotics and in particular multi-rotor aircraft, like quadrotors, are rapidly
+	increasing in popularity also out of the scientific community. However, designing autopilots for UAVs (Unmanned
+  Aerial Vehicles) is a challenging task, which involves multiple interconnected aspects. Therefore, having tools
+  able to show what it happens when some new applications are going to be developed in unknown or critical situations
+  is more and more important.
+
+	<br>
+
+	Simulation is one of such helpful tools, widely used in robotics, enabling not only to verify the components integration
+	and to evaluate their behavior under different circumstances but also to simplify the development and validation processes.
+	Furthermore, simulation is cheaper than experiments with real robots, in terms of time and human resources: it makes possible
+	simulating multiple robots when the hardware may not be available and getting a better understanding of implemented methods
+	under various conditions.
+  </font></p>
 
 	<br>
 
 	<p class="lead" style="text-align:justify">
 	<font size="-0.5">
-	The control of small UAVs, such as Parrot AR.Drone 2.0 and  Bebop 2.0 (micro-quadcopter) and Bitcraze Crazyflie 2.0 (nano-quadcopter),
-	has been extensively investigated worldwide for functionalities augmentation and costs reduction with respect to a single larger
-	vehicle. Software-in-the-loop (SIL) techniques are even more used for detecting and managing instabilities that might be not arise when
-    considering only MATLAB/Simulink simulations. Such instabilities may not be just related to the complexity, accuracy or detailed modeling
-	of the simulated plant, but rather they may appear due to peculiar features of the final realization and, in particular, the software
-	that will implement the control strategy. Indeed, aspects like synchronization, overflow, tasks communication, are all managed by libraries
-	or tools available during the control design phase and yet they are specific of the final code implementation. From such perspective, SIL
-	simulation has to be considered a valuable tool for discovering, in an earlier phase of the usual V-model process, those issues that a
-	model-in-the-loop (MIL) simulation does not necessarily detect. At the same time, a SIL simulation, obtained by using realistic and
-	detailed simulators, gives the opportunity of validating in an easy way the effects of modifying the control strategy for complex missions.
-	That represents quite often the easiest way to tune the flight control system and to check its validity.
-	</font></p>
+	The <b>aim of my research<b> is to illustrate how the software-in-the-loop (SIL) methodology allows to detect and manage instabilities of
+	a quadrotor control system that otherwise might not arise when considering only Matlab/Simulink simulations. The use of the SIL technique
+	allows to understand the behavior of the flight control system by comparing and evaluating different scenarios, with a details level
+	quite close to reality. At the same time, it is possible to discover issues that a model-inthe-loop (MIL) simulation does not necessarily
+	detect, even if carried out through a multi-physics co-simulation approach.
 
 	<br>
 
-	<p class="lead" style="text-align:justify">
-	<font size="-0.5">
-	The aim of this research is to propose a co-design approach based on software-in-the-loop methodologies for performance evaluation, designing
-	and developing algorithms for autonomous systems. The simulation scheme consists of specific middleware, namely ROS, where one node or computer
+	The research proposes a co-design approach based on SIL methodologies for performance evaluation, designing and developing algorithms for
+	autonomous systems. The simulation scheme consists of specific middleware, namely ROS (Robot Operating System), where one node or computer
 	simulates the control unit (e.g., MATLAB/Simulink equipped with Robotics System Toolbox), and another one the vehicles in the scenario
 	(sensor models and obstacles are simulated, too), through 3D simulation environments (e.g., Gazebo, V-REP, AirSim, MORSE, Webots), with the aim
 	of implementing the overall control system together with the flight dynamics and the environment.
+
 	</font></p>
 
 	<br>
