@@ -120,14 +120,14 @@ title: Software
     <p class="lead" style="text-align:justify">
 	<font size="-0.5">
       <b>BebopS</b> contains the developed ROS code for the Industrial Challenge of the 26th Mediterranean Conference on Control and Automation
-			(MED’18)<sup><a href="#fn1" id="ref1">1</a></sup>. The code aimed to simulate the dynamics of the Parrot Bebop 2 together with the flight
-			controller (both high and low level) when external disturbances (wind gusts) acting on it. The control algorithms were designed in Matlab/Simulink
-			and validated in Gazebo by using the MathWorks Robotics System Toolbox (RST). Therefore, the repository contains both ROS nodes and launch files needed
-			to simulate the drone behavior when a tracking algorithm is run. Also, on GitHub the glue code written during the challenge to make able the control
-			algorithm to exchange data on the ROS network is available. Such code was needed for sending commands to and receiving data from the aircraft and the
-			Motion Capture (MoCap) systems Vicon. Furthermore, the repository contains the developing ROS code to connect the controller to the Parrot Sphinx
-			simulator by including the Parrot Bebop onboard firmware in the loop. In this way, details like synchronization, timing issues, fixed-point computation,
-			overflow, divisions-by-zero, can be isolated and investigated in detail.
+			(MED’18)<sup><a href="#fn1" id="ref1">1</a></sup>. The code aimed to simulate the dynamics of the <a href="https://www.parrot.com/it/droni/parrot-bebop-2">
+      Parrot Bebop 2</a> together with the flight controller (both high and low level) when external disturbances (e.g., wind gusts) acting on it. The control algorithms
+      were designed in MATLAB/Simulink and validated in Gazebo by using the MathWorks Robotics System Toolbox (RST). Therefore, the repository contains both ROS
+      nodes and launch files needed to simulate the drone behavior when a tracking algorithm is run. Also, on GitHub the glue code written during the challenge to make able
+      the control	algorithm to exchange data on the ROS network is available. Such code was needed for sending commands to and receiving data from the aircraft and the
+			Motion Capture (MoCap) systems Vicon. Furthermore, the repository contains the developing ROS code to connect the controller to the
+      <a href="https://developer.parrot.com/docs/sphinx/whatissphinx.html">Parrot Sphinx simulator</a> by including the Parrot Bebop onboard firmware in the loop.
+      In this way, details like synchronization, timing issues, fixed-point computation, overflow, divisions-by-zero, can be isolated and investigated in detail.
 
 	<br>
 
