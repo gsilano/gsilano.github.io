@@ -1,5 +1,26 @@
+@ARTICLE{Silano2021MATFly,
+	author       = {{Silano}, G. and {Iannelli}, L.},
+	title        = {{MAT-Fly: An Educational Platform for Simulating Unmanned Aerial Vehicles Aimed to Detect and Track Moving Objects}},
+	group	       = {journals},
+	year         = 2021,
+	status       = {To Appear},
+	code         = {https://github.com/gsilano/MAT-Fly},
+	abstract     = {The main motivation of this work is to propose a simulation approach for a specific task within the Unmanned Aerial Vehicle (UAV) field, i.e., the visual detection and tracking of arbitrary moving objects. In particular, it is described MAT-Fly, a numerical simulation platform for multi-rotor aircraft characterized by the ease of use and control development. The platform is based on Matlab and the MathWorks Virtual Reality (VR) and Computer Vision System (CVS) toolboxes that work together to simulate the behavior of a quad-rotor while tracking a car that moves along a nontrivial path. The VR toolbox has been chosen due to the familiarity that students have with Matlab and because it does not require a notable effort by the user for the learning and development phase thanks to its simple structure. The overall architecture is quite modular so that each block can be easily replaced with others simplifying the code reuse and the platform customization. Some simple testbeds are presented to show the validity of the approach and how the platform works. The simulator is released as open-source, making it possible to go through any part of the system, and available for educational purposes.},
+}
+
+@ARTICLE{Silano2021RAL,
+	author       = {{Silano}, G. and {Baca}, T. and {Penicka}, R. and {Liuzza}, D. and {Saska}, M.},
+	title        = {{Power Line Inspection Tasks with Multi-Aerial Robot Systems via Signal Temporal Logic Specifications}},
+	group	       = {journals},
+	year         = 2021,
+	status       = {To Appear. Accepted also to ICRA'21},
+	preprint     = {publications/ra21.pdf},
+	abstract     = {A framework for computing feasible and constrained trajectories for a fleet of quad-rotors leveraging on Signal Temporal Logic (STL) specifications for power line inspection tasks is proposed in this paper. The planner allows the formulation of complex missions that avoid obstacles and maintain a safe distance between drones while performing the planned mission. An optimization problem is set to generate optimal strategies that satisfy these specifications and also take vehicle
+constraints into account. Further, an event-triggered replanner is proposed to reply to unforeseen events and external disturbances. An energy minimization term is also considered to implicitly save quad-rotors battery life while carrying out the mission. Numerical simulations in MATLAB and experimental results show the validity and the effectiveness of the proposed approach, and demonstrate its applicability in real-world scenarios.},
+}
+
 @INPROCEEDINGS{Silano2020AutomaticaIT,
-	author    	 = {{Silano}, G. and {Liuzza}, D. and {Iannelli}, L. and {Iannelli}, M.},
+	author    	 = {{Silano}, G. and {Liuzza}, D. and {Iannelli}, L. and {Saska}, M.},
 	booktitle 	 = {S.I.D.R.A. (Italian Society of Automatic Control), National Meeting},
 	title			   = {{A framework for power line inspection tasks with multi-robot systems from signal temporal logic specifications}},
 	year			   = {2020},
@@ -60,20 +81,6 @@
 	link         = {https://ieeexplore.ieee.org/document/8914154},
 	note         = {Bari, Italy},
 	abstract     = {Simulation is a standard approach used for designing complex systems like the flight controller in multi-rotor vehicles. In this paper we illustrate how the software-in-the-loop (SIL) methodology allows to detect and manage instabilities of a quadrotor control system that otherwise might not arise when considering only Matlab/Simulink simulations. The use of the SIL technique allows to understand the behavior of the flight control system by comparing and evaluating different scenarios, with a details level quite close to reality. At the same time, it is possible to discover issues that a model-in-the-loop (MIL) simulation does not necessarily detect, even if carried out through a multi-physics co-simulation approach. The paper aims to give the reader a practical and concrete evidence of such considerations through the case study of a micro quadrotor.},
-}
-
-@ARTICLE{Silano2019MATFly,
-	author       = {G. Silano and L. Iannelli},
-	title        = {MAT-Fly: an educational platform for simulating Unmanned Aerial Vehicles aimed to detect and track moving objects},
-	group	       = {journals},
-	year         = 2020,
-	month        = 1,
-	status       = {Under Review},
-	doi			     = {10.13140/RG.2.2.14878.43849},
-	preprint     = {publications/MAT-Fly_ArxivV1.pdf},
-	link         = {https://arxiv.org/abs/1904.00378},
-	code         = {https://github.com/gsilano/MAT-Fly},
-	abstract     = {The main motivation of this work is to propose a simulation approach for a specific task within the UAV (Unmanned Aerial Vehicle) field, i.e., the visual detection and tracking of arbitrary moving objects. In particular, it is described MAT-Fly, a numerical simulation platform for multi-rotors aircrafts characterized by ease of use and control development. The platform is based on Matlab and the MathWorks Virtual Reality (VR) and Computer Vision System (CVS) toolboxes that work together to simulate the behavior of a drone in a 3D environment while tracking a car that moves along a non trivial path. The VR toolbox has been chosen due to the familiarity that students have with Matlab and because it allows to move the attention to the classifier, the tracker, the reference generator and the trajectory tracking control thanks to its simple structure. The overall architecture is quite modular so that each block can be easily replaced with others by simplifying the development phase and by allowing to add even more functionalities. The numerical simulator makes easy and quick to insert and to remove flight control system components, testing and comparing different plans, both for indoor and outdoor scenarios, when computer vision algorithms are in the loop. In an automatic way, the simulator is able to acquire frames from the virtual world, to search for one or more objects on which it has been trained during the learning phase, and to track the target position applying a trajectory control, addressing in that way the image-based visual servoing problems. Some simple testbeds have been presented in order to show the effectiveness and robustness of the approach as well as the platform works. We released the software as open-source, making it available for educational activities.},
 }
 
 @INBOOK{Silano2019ROSVolume4,
