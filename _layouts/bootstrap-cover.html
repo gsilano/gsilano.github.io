@@ -65,18 +65,23 @@
 	</script>
 	<!-- End cookies banner -->
 
+
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="cover-container">
           <div class="masthead clearfix">
             <div class="inner">
               <nav>
+              <!-- No longer required
               <h3 class="masthead-brand">
-                <a href="/index.html">Hi, I'm Giuseppe!</a>
+                <a href="/index.html">Hi, I'm Giuseppe!</a> -->
               </h3>
 
 
         <ul class="nav masthead-nav">
+            <li {% if page.title== "Home" %} class="active"{% endif %}>
+                <a href="/index.html">Home</a>
+            </li>
           		<li {% if page.title== "CV" %} class="active"{% endif %}>
           			  <a href="/cv.html">CV</a>
           	  </li>
