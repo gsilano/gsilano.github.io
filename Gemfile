@@ -9,7 +9,8 @@ source 'http://www.rubygems.org'
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 
-gem "jekyll", "~> 3.8.3"
+# gem "jekyll", "~> 3.8.3" # Original version
+gem "jekyll", "~> 4.2.2"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"
@@ -23,7 +24,7 @@ gem 'jekyll-octicons'
 # A very importat package if you are a part of academia
 gem 'jekyll-scholar'
 
-# GitHub-flavored Emoji plugin for Jekyll
+# GitHub-flavored Emoji plugin for Jekyll.
 gem 'jemoji'
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
