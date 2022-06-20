@@ -4,5 +4,6 @@ _site
 .project
 .sass-cache
 Gemfile.lock
+.jekyll-cache
 
 dependencies/
