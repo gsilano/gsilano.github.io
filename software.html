@@ -83,7 +83,7 @@ title: Software
 
 <div class="row">
 
-    <small class="timestamp text-muted">August 21, 2018 &middot v2018.07.27</small>
+    <small class="timestamp text-muted">August 21, 2018 &middot v2018.07.21</small>
     <p class="lead" style="text-align:justify">
 	<font size="-0.5">
       <b>MAT-Fly</b> is a numerical simulation platform for multi-rotors aircraft characterized by the ease of use and control development. The platform is based
@@ -122,12 +122,12 @@ title: Software
 	<font size="-0.5">
       <b>BebopS</b> contains the developed ROS code for the Industrial Challenge of the 26th Mediterranean Conference on Control and Automation
 			(MED’18)<sup><a href="#fn1" id="ref1">1</a></sup>. The code aimed to simulate the dynamics of the <a href="https://www.parrot.com/it/droni/parrot-bebop-2">
-      Parrot Bebop 2</a> together with the flight controller (both high and low level) when external disturbances (e.g., wind gusts) acting on it. The control algorithms
+      <b>Parrot Bebop 2</b></a> together with the flight controller (both high and low level) when external disturbances (e.g., wind gusts) acting on it. The control algorithms
       were designed in MATLAB/Simulink and validated in Gazebo by using the MathWorks Robotics System Toolbox (RST). Therefore, the repository contains both ROS
       nodes and launch files needed to simulate the drone behavior when a tracking algorithm is run. Also, on GitHub the glue code written during the challenge to make able
       the control	algorithm to exchange data on the ROS network is available. Such code was needed for sending commands to and receiving data from the aircraft and the
 			Motion Capture (MoCap) systems Vicon. Furthermore, the repository contains the developing ROS code to connect the controller to the
-      <a href="https://developer.parrot.com/docs/sphinx/whatissphinx.html">Parrot Sphinx simulator</a> by including the Parrot Bebop onboard firmware in the loop.
+      <a href="https://developer.parrot.com/docs/sphinx/whatissphinx.html"><b>Parrot Sphinx simulator</b></a> by including the Parrot Bebop onboard firmware in the loop.
       In this way, details like synchronization, timing issues, fixed-point computation, overflow, divisions-by-zero, can be isolated and investigated in detail.
 
 	<br>
@@ -158,8 +158,8 @@ title: Software
 	<font size="-0.5">
       <b>NMPC strategy for Autonomous Racing of Scale Vehicles</b> is an extension of the <a href="https://github.com/f1tenth-dev/simulator"><b>F1TENTH simulator</b></a>.
       The F1TENTH simulator mirrors the behavior of autonomous racing scale vehicles. The repository is endowed with the necessary files to run the Nonlinear Model Predictive
-      Control (NMPC) strategy described in <a href="/publications/SMC22.pdf">the paper accepted for publication to the 2022 IEEE International Conference on Systems, Man,
-      and Cybernetics (SMC)</a>. The contribution can be also considered as a reference guide for expanding the F1TENTH simulator functionalities by facilitating the
+      Control (NMPC) strategy described in <a href="/publications/SMC22.pdf"><b>the paper accepted for publication to the 2022 IEEE International Conference on Systems, Man,
+      and Cybernetics (SMC)</b></a>. The contribution can be also considered as a reference guide for expanding the F1TENTH simulator functionalities by facilitating the
       integration of the new control algorithms and features. Some simple case studies are considered to evaluate the performance of the retrieve controller. The code is
       released under Apache license, thus making it available for scientific and educational activities. The platform was developed using Ubuntu 18.04 and the Melodic
       Morenia version of ROS, but it is also fully compatible with Ubuntu 20.04 along with the Noetic Ninjemys distribution of ROS. Although backwards compatibility is
@@ -206,12 +206,12 @@ title: Software
 
 	<p class="lead" style="text-align:justify">
 	<font size="-0.5">
-	<sup id="fn1">1. The MED18 conference report is available on the <a href="https://ieeexplore.ieee.org/document/8667511"><b>IEEE Xplore portal</b></a>.<a href="#ref1"
+	<sup id="fn1">1. The MED'18 conference report is available on the <a href="https://ieeexplore.ieee.org/document/8667511"><b>IEEE Xplore portal</b></a>.<a href="#ref1"
 	title="MED18 Challenge.">&#x21A9</a></sup>
 	<br/>
 	<sup id="fn2">2. Overleaf is an online LaTeX editor that allows real-time collaboration and online compiling of projects to PDF format.<a href="#ref2" title="Overleaf.">&#x21A9</a></sup>
 	<br/>
-	<sup id="fn3">3. It is for UniSannio students and has been written in Italian.<a href="#ref3" title="Thesis Template.">&#x21A9</a></sup>
+	<sup id="fn3">3. It is aimed at UniSannio students and was written in Italian.<a href="#ref3" title="Thesis Template.">&#x21A9</a></sup>
 	</font></p>
 
 </div>
