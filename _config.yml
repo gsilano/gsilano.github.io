@@ -34,10 +34,12 @@ plugins:
 
 plugins_dir: ./_plugins
 
+# To use Google Analytics
 jekyll_analytics:
   GoogleAnalytics:         # Add, if you want to track with Google Analytics
   id: UA-133301890-1          # Required - replace with your tracking id
 
+# To use GitHub APIs
 jekyll_get:
   - data: github
     json: 'https://api.github.com/users/gsilano/repos'
@@ -45,6 +47,7 @@ jekyll_get:
 
 post_dirs: false
 
+# To use bib files for your own bibliography (i.e., to add your scientific papers)
 scholar:
     style: assets/bibliography/ieee.csl
     locale: en
@@ -60,7 +63,6 @@ scholar:
     replace_strings: true
 
     query: "@*"
-
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

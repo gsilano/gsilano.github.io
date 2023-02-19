@@ -20,82 +20,33 @@ title: Video
 
     <br>
 
-    <!-- A VIDEO BLOCK -->
+    <!-- VIDEO LIST -->
     <div align="center">
-    	<table border="0" cellpadding="1" cellspacing="1" height="191" width="1100">
-    		<tbody>
-          <tr>
-          <!-- TABLE - COLUMN I -->
+      <table border="0" cellpadding="1" cellspacing="1" height="650" width="1100">
+        <tbody>
+          {% for video in site.data.videos %}
+            {% assign remainder = forloop.index0 | modulo: 2 %}
+            {% if forloop.first or remainder == 0 %}
+              <tr>
+            {% endif %}
             <td style="width: 385px;">
               <h4 style="text-align: justify; margin-left: 15px; margin-right: 15px;">
-    					  <iframe allowfullscreen="" frameborder="0" height="189" src="https://www.youtube.com/embed/Cpuqx7Imrz4" width="336"></iframe>
+                <iframe allowfullscreen="" frameborder="0" height="189" src="https://www.youtube.com/embed/{{ video.youtube_id }}" width="336"></iframe>
               </h4>
             </td>
-    				<td style="width: 358px;">
-    					<h4 style="text-align: left;">
-    						PACNav: Collective Navigation of UAV Swarms without Communication and External Localization</h4>
-    				</td>
-          <!-- TABLE - COLUMN II -->
-            <td style="width: 385px;">
-              <h4 style="text-align: justify; margin-left: 15px; margin-right: 15px;">
-    					  <iframe allowfullscreen="" frameborder="0" height="189" src="https://www.youtube.com/embed/7H8098hylmY" width="336"></iframe>
+            <td style="width: 358px;">
+              <h4 style="text-align: left;">
+                {{ video.title }}
               </h4>
             </td>
-    				<td style="width: 358px;">
-    					<h4 style="text-align: left;">
-    						[EXP] A STL Motion Planner for Bird Diverter Installation Tasks with Multi-Robot Aerial Systems</h4>
-    				</td>
-            <!------ END TABLE ------>
-          </tr>
-          <tr>
-          <!-- TABLE - COLUMN I -->
-            <td style="width: 385px;">
-              <h4 style="text-align: justify; margin-left: 15px; margin-right: 15px;">
-    					  <iframe allowfullscreen="" frameborder="0" height="189" src="https://www.youtube.com/embed/-03R8laTtQc" width="336"></iframe>
-              </h4>
-            </td>
-    				<td style="width: 358px;">
-    					<h4 style="text-align: left;">
-    						[GAZEBO] A STL Motion Planner for Bird Diverter Installation Tasks with Multi-Robot Aerial Systems</h4>
-    				</td>
-          <!-- TABLE - COLUMN II -->
-            <td style="width: 385px;">
-              <h4 style="text-align: justify; margin-left: 15px; margin-right: 15px;">
-    					  <iframe allowfullscreen="" frameborder="0" height="189" src="https://www.youtube.com/embed/oXssxQjsnbA" width="336"></iframe>
-              </h4>
-            </td>
-    				<td style="width: 358px;">
-    					<h4 style="text-align: left;">
-    						A Nonlinear Model Predictive Control Strategy for Autonomous Racing of Scale Vehicles (SMC 2022 Video Pitch)</h4>
-    				</td>
-          <!------ END TABLE ------>
-        </tr>
-        <tr>
-          <!-- TABLE - COLUMN I -->
-            <td style="width: 385px;">
-              <h4 style="text-align: justify; margin-left: 15px; margin-right: 15px;">
-    					  <iframe allowfullscreen="" frameborder="0" height="189" src="https://www.youtube.com/embed/w5c328rQmX4" width="336"></iframe>
-              </h4>
-            </td>
-    				<td style="width: 358px;">
-    					<h4 style="text-align: left;">
-    						A Nonlinear Model Predictive Control Strategy for Autonomous Racing of Scale Vehicles</h4>
-    				</td>
-            <!-- TABLE - COLUMN II -->
-    				<td style="width: 385px;">
-              <h4 style="text-align: justify; margin-left: 15px; margin-right: 15px;">
-    					  <iframe allowfullscreen="" frameborder="0" height="189" src="https://www.youtube.com/embed/pIVNJw2l7_4" width="336"></iframe>
-              </h4>
-            </td>
-    				<td style="width: 358px;">
-    					<h4 style="text-align: left;">
-    						A Perception-Aware NMPC for Vision-Based Target Tracking and Collision Avoidance with a Multi-Rotor</h4>
-    				</td>
-          <!------ END TABLE ------>
-          </tr>
-    		</tbody>
-    	</table>
+            {% if forloop.last or remainder == 1 %}
+              </tr>
+            {% endif %}
+          {% endfor %}
+        </tbody>
+      </table>
     </div>
+
 
     <br>
     <br>
