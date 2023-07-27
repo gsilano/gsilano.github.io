@@ -13,6 +13,17 @@
  abstract     = {This paper presents a method for designing energy-aware collaboration tasks between humans and robots, and generating corresponding trajectories to carry out those tasks. The method involves using high-level specifications expressed as Signal Temporal Logic (STL) specifications to automatically synthesize task assignments and trajectories. The focus is on a specific task where a Multi-Rotor Aerial Vehicle (MRAV) performs object handovers in a power line setting. The motion planner takes into account constraints such as payload capacity and refilling, while ensuring that the generated trajectories are feasible. The approach also allows users to specify robot behaviors that prioritize human comfort, including ergonomics and user preferences. The method is validated through numerical analyses in MATLAB and realistic Gazebo simulations in a mock-up scenario.}
 }
 
+@ARTICLE{Silano2022BirdDiverter,
+ title        = {{A Signal Temporal Logic Motion Planner for Bird Diverter Installation Tasks with Multi-Robot Aerial Systems}},
+ author       = {Alvaro {Caballero} and Giuseppe {Silano}},
+ journal      = {IEEE Access},
+ group        = {journals},
+ year         = {2023},
+ preprint     = {publications/birdDiverter.pdf},
+ status       = {Impact factor: 3.9.},
+ abstract     = {This paper addresses the problem of task assignment and trajectory generation for installing bird diverters using a fleet of multi-rotors. The proposed solution extends our previous motion planner to compute feasible and constrained trajectories, considering payload capacity limitations and recharging constraints. Signal Temporal Logic (STL) specifications are employed to encode the mission objectives and temporal requirements. Additionally, an event-based replanning strategy is introduced to handle unforeseen failures. An energy minimization term is also employed to implicitly save multi-rotor flight time during installation operations. The effectiveness and validity of the approach are demonstrated through simulations in MATLAB and Gazebo, as well as field experiments carried out in a mock-up scenario.}
+}
+
 @ARTICLE{Silano2023JINT_HW,
  author       = {{Hert}, D. and {Baca}, T. and {Petracek}, P. and {Kratky}, V. and {Penicka}, R. and {Spurny}, V. and {Petrlik}, M. and {Vrba}, M. and {Zaitlik}, D. and {Stoudek}, P. and {Walter}, V. and {Stepan}, P. and {Horyna},  J. and {Pritzl}, V. and {Sramek}, M. and {Ahmad}, A. and {Silano}, G. and {Bonilla Licea}, D. and {Stibinger}, P.  and {Nascimento}, T. and {Saska}, M.},
  journal      = {Journal of Intelligent & Robotic Systems},
@@ -25,7 +36,7 @@
  pages        = {1-34},
  doi          = {10.1007/s10846-023-01879-2},
  number       = {64},
- mont         = {7},
+ month        = {7},
  link         = {https://link.springer.com/article/10.1007/s10846-023-01879-2},
  abstract     = {This paper presents a modular autonomous Unmanned Aerial Vehicle (UAV) platform called the Multi-robot Systems (MRS) Drone that can be used in a large range of indoor and outdoor applications. The MRS Drone features unique modularity with respect to changes in actuators, frames, and sensory configuration. As the name suggests, the platform is specially tailored for deployment within a MRS group. The MRS Drone contributes to the state-of-the-art of UAV platforms by allowing smooth real-world deployment of multiple aerial robots, as well as by outperforming other platforms with its modularity. For real-world multi-robot deployment in various applications, the platform is easy to both assemble and modify. Moreover, it is accompanied by a realistic simulator to enable safe pre-flight testing and a smooth transition to complex real-world experiments. In this manuscript, we present mechancal and electrical designs, software architecture, and technical specifications to build a fully autonomous multi UAV system. Finally, we demonstrate the full capabilities and the unique modularity of the MRS Drone in various real-world applications that required a diverse range of platform configurations.}
 }
@@ -87,17 +98,6 @@
  link         = {https://imrclab.github.io/workshop-uav-sims-icra2023/},
  note         = {ExCeL, London},
  abstract     = {Workshop session accepted to be held at the 2023 IEEE International Conference on Robotics and Automation (ICRA). It is a half-day workshop which aims to provide knowledge and experience of researchers who have struggled to find, customize, or design a robotic simulator for their own purposes or specific application. The workshop includes talks from both academia and industry to provide a broad point of view to the participants. In addition, breakout sessions and a round table allows participants to debate where simulation tools should be headed in the future and to gather information on viable and effective solutions for their own tasks. The target audience includes graduate engineers, students, and early-career researchers.}
-}
-
-@ARTICLE{Silano2022BirdDiverter,
- title        = {{A Signal Temporal Logic Motion Planner for Bird Diverter Installation Tasks with Multi-Robot Aerial Systems}},
- author       = {Alvaro {Caballero} and Giuseppe {Silano}},
- doi          = {10.48550/arXiv.2210.09750},
- group        = {preprints},
- year         = {2022},
- preprint     = {publications/birdDiverter22.pdf},
- link         = {https://arxiv.org/abs/2210.09750},
- abstract     = {This paper investigates the problem of task assignment and trajectory generation for the installation of bird diverters with a fleet of multirotors leveraging on Signal Temporal Logic (STL) specifications. We extend our previous motion planner to compute feasible and constrained trajectories, taking into account payload capacity limitations and recharging constraints. The proposed planner ensures the continuity of the operation, while guaranteeing compliance with safety requirements and mission fulfillment. Additionally, an event-based replanning strategy is proposed to react to unforeseen failures. An energy minimization term is also considered to implicitly save multirotor flight time during installation operations. Numerical simulations in MATLAB, Gazebo, and field experiments demonstrate the performance of the approach and its validity in mock-up scenarios.}
 }
 
 @ARTICLE{Silano2022Bioinspired,
