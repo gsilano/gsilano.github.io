@@ -15,14 +15,14 @@ title: Software
     <p class="lead" style="text-align:justify">
 	  <font size="-0.5">
       <b>CrazyS</b> is an extension of the ROS package <a target="_blank" href="https://github.com/ethz-asl/rotors_simulator"
-			title="RotorS"><b>RotorS</b></a>, aimed to modeling, developing and integrating the Crazyflie 2.0 nano-quadcopter in the
-			physics based simulation  environment Gazebo. Such simulation platform allows to understand quickly the behavior of the
+			title="RotorS"><b>RotorS</b></a>, aimed at modeling, developing, and integrating the Crazyflie 2.0 nano-quadcopter in the
+			physics based simulation environment Gazebo. Such simulation platform allows to understand quickly the behavior of the
 			flight control system by comparing and evaluating different indoor and outdoor scenarios, with a details level quite close
-			to reality. The proposed extension, running on Kinetic Kame (Ubuntu 16.04 along with Gazebo 7 and 9, v5.0.9 and v6.0.9) ROS version but fully
+			to reality. The proposed extension, running on Kinetic Kame (Ubuntu 16.04 along with Gazebo 7 and 9, v5.0.9 and v6.0.9) ROS release but fully
       compatible with the Indigo Igloo (Ubuntu 14.04 along with Gazebo 5, v4.0.13), Melodic Morenia (Ubuntu 18.04 along with Gazebo 9, v6.0.9) and
       Noetic Ninjemys (Ubuntu 20.04 along with Gazebo 11, v7.0.1) ones, expands the RotorS capabilities by considering the Crazyflie 2.0
-      physical model, its flight control system and the Crazyflie’s on-board IMU, as wellThe contribution can be also considered as
-      a reference guide for expanding the RotorS functionalities in the UAVs field, by facilitating the integration of new aircrafts.
+      physical model, its flight control system and the Crazyflie's on-board IMU, as well. The contribution can be also considered as
+      a reference guide for expanding the RotorS functionalities in the UAVs field, by facilitating the integration of new aerial robots.
 
 	<br>
 
@@ -86,9 +86,9 @@ title: Software
     <small class="timestamp text-muted">August 21, 2018 &middot v2018.07.21</small>
     <p class="lead" style="text-align:justify">
 	<font size="-0.5">
-      <b>MAT-Fly</b> is a numerical simulation platform for multi-rotors aircraft characterized by the ease of use and control development. The platform is based
+      <b>MAT-Fly</b> is a numerical simulation platform for multi-rotors characterized by the ease of use and control development. The platform is based
 			on MATLAB and the <a href="https://it.mathworks.com/products/3d-animation.html"><b>MathWorks Virtual Reality (VR) Toolbox</b></a>  that work together
-			to simulate the behavior of a drone in a 3D environment while tracking a car that moves along a non trivial path. The VR toolbox has been chosen due
+			to simulate the behavior of a drone (quadrotor) in a 3D environment while tracking a car that moves along a non trivial path. The VR toolbox has been chosen due
 			to the familiarity that students have with MATLAB and because it allows to move the attention to the classifier, the tracker, the reference generator
 			and the trajectory tracking control thanks to its simple structure. The overall architecture is quite modular so that each block can be easily replaced
 			with others by simplifying the development phase and by allowing to add even more functionalities. The platform has been developed using the 2015b release
@@ -121,11 +121,11 @@ title: Software
     <p class="lead" style="text-align:justify">
 	<font size="-0.5">
       <b>BebopS</b> contains the developed ROS code for the Industrial Challenge of the 26th Mediterranean Conference on Control and Automation
-			(MED’18)<sup><a href="#fn1" id="ref1">1</a></sup>. The code aimed to simulate the dynamics of the <a href="https://www.parrot.com/it/droni/parrot-bebop-2">
-      <b>Parrot Bebop 2</b></a> together with the flight controller (both high and low level) when external disturbances (e.g., wind gusts) acting on it. The control algorithms
+			(MED’18)<sup><a href="#fn1" id="ref1">1</a></sup>. The code aimed at simulating the dynamics of the <a href="https://www.parrot.com/it/droni/parrot-bebop-2">
+      <b>Parrot Bebop 2</b></a> together with the flight controller (both high and low levels) when external disturbances (e.g., wind gusts) acting on it. The control algorithms
       were designed in MATLAB/Simulink and validated in Gazebo by using the MathWorks Robotics System Toolbox (RST). Therefore, the repository contains both ROS
       nodes and launch files needed to simulate the drone behavior when a tracking algorithm is run. Also, on GitHub the glue code written during the challenge to make able
-      the control	algorithm to exchange data on the ROS network is available. Such code was needed for sending commands to and receiving data from the aircraft and the
+      the control	algorithm to exchange data on the ROS network is available. Such code was needed for sending commands to and receiving data from the vehicle and the
 			Motion Capture (MoCap) systems Vicon. Furthermore, the repository contains the developing ROS code to connect the controller to the
       <a href="https://developer.parrot.com/docs/sphinx/whatissphinx.html"><b>Parrot Sphinx simulator</b></a> by including the Parrot Bebop onboard firmware in the loop.
       In this way, details like synchronization, timing issues, fixed-point computation, overflow, divisions-by-zero, can be isolated and investigated in detail.
@@ -194,7 +194,7 @@ title: Software
 
   <p class="lead" style="text-align:justify">
 	<font size="-0.5">
-  <b>Minor contributions on various packages</b> have been done to several open-source projects such as <a href="https://github.com/AutonomyLab/bebop_autonomy"><b>
+  <b>Minor contributions on various packages</b> have been done to several open-source projects, such as <a href="https://github.com/AutonomyLab/bebop_autonomy"><b>
   bebop_autonomy</b></a>, <a href="https://github.com/felixduvallet/ros-travis-integration"><b>ros-travis-integration</b></a>, <a href="https://github.com/ethz-asl/rotors_simulator">
   <b>RotorS</b></a> (wiki and pull request), <a href="https://github.com/citation-style-language/styles"><b>styles</b></a>, <a href="https://github.com/fmarotta/kaobook"><b>kaobook</b></a>,
   and <a href="https://github.com/chenyutao36/MATMPC"><b>MATMPC</b></a>. In addition, I have published on Overleaf<sup><a href="#fn2" id="ref2">2</a></sup> under LaTeX Project Public 1.3c
@@ -211,7 +211,7 @@ title: Software
 	<br/>
 	<sup id="fn2">2. Overleaf is an online LaTeX editor that allows real-time collaboration and online compiling of projects to PDF format.<a href="#ref2" title="Overleaf.">&#x21A9</a></sup>
 	<br/>
-	<sup id="fn3">3. It is aimed at UniSannio students and was written in Italian.<a href="#ref3" title="Thesis Template.">&#x21A9</a></sup>
+	<sup id="fn3">3. It is aimed for UniSannio's students and was written in Italian.<a href="#ref3" title="Thesis Template.">&#x21A9</a></sup>
 	</font></p>
 
 </div>
