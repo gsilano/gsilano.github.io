@@ -1,3 +1,14 @@
+@INPROCEEDINGS{Silano2024ICASSP,
+ author       = {{Bonilla Licea}, Daniel and {Silano}, Giuseppe and {Mounir}, Ghogho and {Saska}, Martin},
+ booktitle    = {2024 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2024)},
+ title        = {{Omnidirectional Multi-Rotor Aerial Vehicle Poser Optimization: A Novel Approach to Physical Layer Security}},
+ year         = {2024},
+ group        = {conferences},
+ month        = {4},
+ pages        = {1-5},
+ abstract     = {The integration of Multi-Rotor Aerial Vehicles (MRAVs) into 5G and 6G networks enhances coverage, connectivity, and congestion management. This fosters communication-aware robotics, exploring the interplay between robotics and communications, but also makes the MRAVs susceptible to malicious attacks, such as jamming. One traditional approach to counter these attacks is the use of beamforming on the MRAVs to apply physical layer security techniques. In this paper, we explore the pose optimization as an alternative approach to countering jamming attacks on MRAVs. This technique is intended for omnidirectional MRAVs, which are drones capable of independently controlling both their position and orientation, as opposed to the more common under-actuated MRAVs whose orientation cannot be controlled independently of their position. In this paper, we consider an omnidirectional MRAV serving as a Base Station (BS) for legitimate ground nodes, under attack by a malicious jammer. We optimize the MRAV pose (i.e., position and orientation) to maximize the minimum Signal-to-Interference-plus-Noise Ratio (SINR) over all legitimate nodes.}
+}
+
 @ARTICLE{Silano2023SurveySimulator,
  title        = {{Survey of Simulators for Aerial Robots}},
  author       = {{Dimmig}, C. A. and {Silano}, G. and {McGuire}, K. and {Gabellieri}, C. and {Honig}, W. and {Moore}, J. and Kobilarov, M.},
@@ -19,6 +30,7 @@
  group        = {workshops},
  month        = {10},
  pages        = {1-5},
+ link         = {https://sites.google.com/view/hmri-2023/home},
  preprint     = {publications/iros2023_hsi_ws.pdf},
  note         = {contribution accepted for discussion at the workshop session: "Human Multi-Robot Interaction Workshop", Detroit, Michigan, USA},
  abstract     = {This paper presents a formation control approach for contactless Human-Swarm Interaction (HSI) using hand gestures with a team of multi-rotor Unmanned Aerial Vehicles (UAVs). The approach aims to monitor the safety of human workers, especially those working at heights. In the proposed scheme, one UAV acts as the leader of the formation and is equipped with sensors for human worker detection and gesture recognition. The follower UAVs maintain a predetermined formation relative to the worker’s position, thereby providing additional perspectives of the monitored scene. The use of hand gestures allows the human worker to specify movements and action commands for the UAV team, without the need for an additional communication channel or specific markers including the relative distance. Field experiments with three UAVs and a human worker in a mock-up scenario showcase the effectiveness and responsiveness of the proposed approach.}
@@ -83,6 +95,7 @@
  doi          = {10.1007/s10846-023-01879-2},
  number       = {64},
  month        = {7},
+ code         = {https://github.com/ctu-mrs/mrs_uav_system},
  link         = {https://link.springer.com/article/10.1007/s10846-023-01879-2},
  abstract     = {This paper presents a modular autonomous Unmanned Aerial Vehicle (UAV) platform called the Multi-robot Systems (MRS) Drone that can be used in a large range of indoor and outdoor applications. The MRS Drone features unique modularity with respect to changes in actuators, frames, and sensory configuration. As the name suggests, the platform is specially tailored for deployment within a MRS group. The MRS Drone contributes to the state-of-the-art of UAV platforms by allowing smooth real-world deployment of multiple aerial robots, as well as by outperforming other platforms with its modularity. For real-world multi-robot deployment in various applications, the platform is easy to both assemble and modify. Moreover, it is accompanied by a realistic simulator to enable safe pre-flight testing and a smooth transition to complex real-world experiments. In this manuscript, we present mechancal and electrical designs, software architecture, and technical specifications to build a fully autonomous multi UAV system. Finally, we demonstrate the full capabilities and the unique modularity of the MRS Drone in various real-world applications that required a diverse range of platform configurations.}
 }
@@ -129,6 +142,7 @@
  doi          = {10.1109/MRA.2023.3238213},
  group        = {miscellaneous},
  status       = {Impact factor: 5.229.},
+ code         = {https://github.com/ctu-mrs/summer-school-2022},
  link         = {https://ieeexplore.ieee.org/document/10084390},
  preprint     = {publications/2023_IEEE_RAM.pdf},
  abstract     = {In recent decades, robotic systems have been used for an increasing number of applications, often involving multiple robots. Although multi-robot systems (MRS) provide benefits like redundancy, robustness, and fault tolerance, they come with numerous challenges. These challenges present new research possibilities and are of great interest to the IEEE Robotics and Automation Society (RAS). The IEEE RAS Summer School on MRS aims to gather the knowledge and expertise of the robotics community and bridge the gap between theory and practice.}
@@ -193,6 +207,7 @@
  pages        = {1264-1273},
  link         = {https://ieeexplore.ieee.org/document/9836083},
  doi          = {10.1109/ICUAS54217.2022.9836083},
+ code         = {https://github.com/ctu-mrs/mrs_uav_system},
  abstract     = {This paper presents a family of autonomous Unmanned Aerial Vehicles (UAVs) platforms designed for a diverse range of indoor and outdoor applications. The proposed UAV design is highly modular in terms of used actuators, sensor configurations, and even UAV frames. This allows to achieve, with minimal effort, a proper experimental setup for single, as well as, multi robot scenarios. Presented platforms are intended to facilitate the transition from simulations, and simplified laboratory experiments, into the deployment of aerial robots into uncertain and hard-to-model real-world conditions. We present mechanical designs, electric configurations, and dynamic models of the UAVs, followed by numerous recommendations and technical details required for building such a fully autonomous UAV system for experimental verification of scientific achievements. To show strength and high variability of the proposed system, we present results of tens of completely different real-robot experiments in various environments using distinct actuator and sensory configurations.}
 }
 
@@ -493,6 +508,7 @@ abstract     = {Simulation is a standard approach used for designing complex sys
  doi         = {10.1109/CCA.2016.7587947},
  month       = {9},
  preprint    = {publications/cca16.pdf},
+ code        = {http://github.com/gsilano/MAT-Fly},
  link        = {https://ieeexplore.ieee.org/document/7587947},
  note        = {Buenos Aires, Argentina},
  abstract    = {The main motivation of this work is to show, for educational purposes, that the visual based object tracking problem can be illustrated through the simulation-in-the-loop approach: by using the MathWorks Virtual Reality Toolbox together with Matlab, it is possible to simulate the behavior of a drone in a 3D environment when detection and control algorithms are run. Matlab VR is used due to the familiarity that students have with. In this way the attention can be moved to the classifier, the references generator and the trajectory tracking control. Each block is decoupled and independent, so it can be easily replaced with others thus simplifying the development phase.}
