@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+	<link rel="icon" href="/favicon.png" type="image/x-icon">
+
+    <title>Giuseppe Silano - Software</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- For inserting emojis -->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet"/>
+
+    <!--  for using font-awesome icons (with bootstrap) -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- My Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="/css/cover.css"/>
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:200,400" rel="stylesheet">
+
+
+  </head>
+  <body>
+
+  <!-- Cookies banner -->
+	<script id="ce-banner-html">
+		  <p style="text-align: center;" class="ce-banner">
+			<b>By the Italian law I must tell you that my site uses <em>third-party cookies</em>. If you click outside this banner or scroll down the page, you accept
+			my cookies and you can continue the navigation. <br><a href="#" class="ce-accept"><b>OK, let&rsquo;s go</b></a> Otherwise <a href="/cookies.html" style='color:blue'>
+			Read More</a> on how to disable them.</b>
+			<!-- <a href="#" class="ce-dismiss">X</a> -->
+		  </p>
+	</script>
+
+  <!-- THIS PART OF THE CODE ALLOWS RUNNING JASON SCRIPTS -->
+  <!-- DISABLED -->
+	<!-- Please rotate your screen message -->
+	<!-- <script src="files/pleaserotate.js"></script> -->
+
+	<!-- Load the script -->
+	<script src="/files/cookies-enabler.js"></script>
+	<!-- Init the script -->
+	<script>
+		  COOKIES_ENABLER.init({
+		  bannerClass: 'ce-banner-html',
+		  eventScroll: true,
+		  scrollOffset: 400,
+		  clickOutside: true
+		  });
+	</script>
+	<!-- End cookies banner -->
+
+
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div class="masthead clearfix">
+            <div class="inner">
+              <nav>
+              <!-- No longer required
+              <h3 class="masthead-brand">
+                <a href="/index.html">Hi, I'm Giuseppe!</a> -->
+              </h3>
+
+
+        <ul class="nav masthead-nav">
+            <li >
+                <a href="/index.html">Home</a>
+            </li>
+          		<li >
+          			  <a href="/cv.html">CV</a>
+          	  </li>
+          	  <li >
+          			  <a href="/research.html">Research</a>
+          		</li>
+          		<li  class="active">
+          	          <a href="/software.html"> Software</a>
+          	  </li>
+          		<li >
+          		  <a href="/publications.html"> Publications</a>
+          		</li>
+              <li >
+                <a href="/video.html"> Videos</a>
+              </li>
+              <li >
+                <a href="/projects.html"> Research Projects</a>
+              </li>
+          		<li >
+                            <a href="/info.html"> About the site</a>
+              </li>
+	      </ul>
+
+	      </nav>
+            </div>
+          </div>
+
+          <div class="inner">
+            <!-- Render Github octocat in top right corner -->
+<a target="_blank" href="https://github.com/gsilano" class="github-corner" title="Go to Github">
+<svg width="60" height="60" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+
+<div class="row">
+
+    <small class="timestamp text-muted">December 28, 2021 &middot v4.0.13, v5.0.9, v6.0.9, and v7.0.1</small>
+    <p class="lead" style="text-align:justify">
+	  <font size="-0.5">
+      <b>CrazyS</b> is an extension of the ROS package <a target="_blank" href="https://github.com/ethz-asl/rotors_simulator"
+			title="RotorS"><b>RotorS</b></a>, aimed at modeling, developing, and integrating the Crazyflie 2.0 nano-quadcopter in the
+			physics based simulation environment Gazebo. Such simulation platform allows to understand quickly the behavior of the
+			flight control system by comparing and evaluating different indoor and outdoor scenarios, with a details level quite close
+			to reality. The proposed extension, running on Kinetic Kame (Ubuntu 16.04 along with Gazebo 7 and 9, v5.0.9 and v6.0.9) ROS release but fully
+      compatible with the Indigo Igloo (Ubuntu 14.04 along with Gazebo 5, v4.0.13), Melodic Morenia (Ubuntu 18.04 along with Gazebo 9, v6.0.9) and
+      Noetic Ninjemys (Ubuntu 20.04 along with Gazebo 11, v7.0.1) ones, expands the RotorS capabilities by considering the Crazyflie 2.0
+      physical model, its flight control system and the Crazyflie's on-board IMU, as well. The contribution can be also considered as
+      a reference guide for expanding the RotorS functionalities in the UAVs field, by facilitating the integration of new aerial robots.
+
+	<br>
+
+	  <!-- Place this tag where you want the button to render. STAR -->
+	  <a class="github-button" href="https://github.com/gsilano/CrazyS" data-show-count="true" aria-label="Star gsilano/CrazyS on GitHub">Star</a>
+
+	  <!-- Place this tag where you want the button to render. DOWNLOAD -->
+	  <a class="github-button" href="https://github.com/gsilano/CrazyS/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download gsilano/CrazyS on GitHub">Download</a>
+
+	  <!-- Place this tag where you want the button to render. SUBSCRIPTION -->
+	  <a class="github-button" href="https://github.com/gsilano/CrazyS/subscription" data-show-count="true" aria-label="Subscribe gsilano/CrazyS on GitHub">Subscribe</a>
+
+	  <!-- Place this tag where you want the button to render. FORK -->
+	  <a class="github-button" href="https://github.com/gsilano/CrazyS/fork" data-show-count="true" aria-label="Fork gsilano/CrazyS on GitHub">Fork</a>
+
+	</font></p>
+
+</div>
+
+<br>
+<br>
+
+<div class="row">
+
+    <small class="timestamp text-muted">February 1, 2024 &middot v2024.02.01</small>
+    <p class="lead" style="text-align:justify">
+	<font size="-0.5">
+      <b>EuopeCV</b> is an unofficial LaTeX implementation of the standard model for curricula vitae (the <i>Europass CV</i>) as
+			recommended by the European Commission. The Europass CV replaces the European CV, launched in 2002, and defines both the content
+			and the layout of a curriculum vitae. Therefore, the <b>europecv</b> class created by <a href="https://users.dimi.uniud.it/~nicola.vitacolonna/">
+			<b>Nicola Vitacolonna</b></a> and now maintained by me, provides support for the latter, and for the former as far as personal
+			information and spoken languages are concerned. This class tries to be as close as possible to the standard model without sacrificing
+			flexibility. Although it is primarily intended for users of the European Union, the class can be used for any kind of curriculum vitae
+			(possibly with the options <i>\texttt{notitle}</i> and <i>\texttt{nologo}</i>), or even for other kinds of documents: for example,
+			the official documentation file has been typeset using the <i>\textsf{europecv}</i> class. The source files are included in the package so, please,
+			feel free to contribute. Finally, the package is available on <a href="https://ctan.org/pkg/europecv"><b>CTAN pages</b></a>.
+
+	<br>
+
+	  <!-- Place this tag where you want the button to render. STAR -->
+	  <a class="github-button" href="https://github.com/gsilano/EuropeCV" data-show-count="true" aria-label="Star gsilano/EuropeCV on GitHub">Star</a>
+
+	  <!-- Place this tag where you want the button to render. DOWNLOAD -->
+	  <a class="github-button" href="https://github.com/gsilano/EuropeCV/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download gsilano/EuropeCV on GitHub">Download</a>
+
+	  <!-- Place this tag where you want the button to render. SUBSCRIPTION -->
+	  <a class="github-button" href="https://github.com/gsilano/EuropeCV/subscription" data-show-count="true" aria-label="Subscribe gsilano/EuropeCV on GitHub">Subscribe</a>
+
+	  <!-- Place this tag where you want the button to render. FORK -->
+	  <a class="github-button" href="https://github.com/gsilano/EuropeCV/fork" data-show-count="true" aria-label="Fork gsilano/EuropeCV on GitHub">Fork</a>
+
+	</font></p>
+
+</div>
+
+<br>
+<br>
+
+<div class="row">
+
+    <small class="timestamp text-muted">August 21, 2018 &middot v2018.07.21</small>
+    <p class="lead" style="text-align:justify">
+	<font size="-0.5">
+      <b>MAT-Fly</b> is a numerical simulation platform for multi-rotors characterized by the ease of use and control development. The platform is based
+			on MATLAB and the <a href="https://it.mathworks.com/products/3d-animation.html"><b>MathWorks Virtual Reality (VR) Toolbox</b></a>  that work together
+			to simulate the behavior of a drone (quadrotor) in a 3D environment while tracking a car that moves along a non trivial path. The VR toolbox has been chosen due
+			to the familiarity that students have with MATLAB and because it allows to move the attention to the classifier, the tracker, the reference generator
+			and the trajectory tracking control thanks to its simple structure. The overall architecture is quite modular so that each block can be easily replaced
+			with others by simplifying the development phase and by allowing to add even more functionalities. The platform has been developed using the 2015b release
+			of MATLAB but it is compatible with any other successive MATLAB release.
+
+	<br>
+
+	  <!-- Place this tag where you want the button to render. STAR -->
+	  <a class="github-button" href="https://github.com/gsilano/MAT-Fly" data-show-count="true" aria-label="Star gsilano/MAT-Fly on GitHub">Star</a>
+
+	  <!-- Place this tag where you want the button to render. DOWNLOAD -->
+	  <a class="github-button" href="https://github.com/gsilano/MAT-Fly/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download gsilano/MAT-Fly on GitHub">Download</a>
+
+	  <!-- Place this tag where you want the button to render. SUBSCRIPTION -->
+	  <a class="github-button" href="https://github.com/gsilano/MAT-Fly/subscription" data-show-count="true" aria-label="Subscribe gsilano/MAT-Fly on GitHub">Subscribe</a>
+
+	  <!-- Place this tag where you want the button to render. FORK -->
+	  <a class="github-button" href="https://github.com/gsilano/MAT-Fly/fork" data-show-count="true" aria-label="Fork gsilano/MAT-Fly on GitHub">Fork</a>
+
+	</font></p>
+
+</div>
+
+<br>
+<br>
+
+<div class="row">
+
+    <small class="timestamp text-muted">December 27, 2019 &middot v0.2.2, v1.0.1 and v2.0.1</small>
+    <p class="lead" style="text-align:justify">
+	<font size="-0.5">
+      <b>BebopS</b> contains the developed ROS code for the Industrial Challenge of the 26th Mediterranean Conference on Control and Automation
+			(MED’18)<sup><a href="#fn1" id="ref1">1</a></sup>. The code aimed at simulating the dynamics of the <a href="https://www.parrot.com/it/droni/parrot-bebop-2">
+      <b>Parrot Bebop 2</b></a> together with the flight controller (both high and low levels) when external disturbances (e.g., wind gusts) acting on it. The control algorithms
+      were designed in MATLAB/Simulink and validated in Gazebo by using the MathWorks Robotics System Toolbox (RST). Therefore, the repository contains both ROS
+      nodes and launch files needed to simulate the drone behavior when a tracking algorithm is run. Also, on GitHub the glue code written during the challenge to make able
+      the control	algorithm to exchange data on the ROS network is available. Such code was needed for sending commands to and receiving data from the vehicle and the
+			Motion Capture (MoCap) systems Vicon. Furthermore, the repository contains the developing ROS code to connect the controller to the
+      <a href="https://developer.parrot.com/docs/sphinx/whatissphinx.html"><b>Parrot Sphinx simulator</b></a> by including the Parrot Bebop onboard firmware in the loop.
+      In this way, details like synchronization, timing issues, fixed-point computation, overflow, divisions-by-zero, can be isolated and investigated in detail.
+
+	<br>
+
+	  <!-- Place this tag where you want the button to render. STAR -->
+	  <a class="github-button" href="https://github.com/gsilano/BebopS" data-show-count="true" aria-label="Star gsilano/BebopS on GitHub">Star</a>
+
+	  <!-- Place this tag where you want the button to render. DOWNLOAD -->
+	  <a class="github-button" href="https://github.com/gsilano/BebopS/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download gsilano/BebopS on GitHub">Download</a>
+
+	  <!-- Place this tag where you want the button to render. SUBSCRIPTION -->
+	  <a class="github-button" href="https://github.com/gsilano/BebopS/subscription" data-show-count="true" aria-label="Subscribe gsilano/BebopS on GitHub">Subscribe</a>
+
+	  <!-- Place this tag where you want the button to render. FORK -->
+	  <a class="github-button" href="https://github.com/gsilano/BebopS/fork" data-show-count="true" aria-label="Fork gsilano/BebopS on GitHub">Fork</a>
+
+	</font></p>
+
+</div>
+
+<br>
+<br>
+
+<div class="row">
+
+    <small class="timestamp text-muted">July 25, 2022 &middot v0.0.1 and v1.0.0</small>
+    <p class="lead" style="text-align:justify">
+	<font size="-0.5">
+      <b>NMPC strategy for Autonomous Racing of Scale Vehicles</b> is an extension of the <a href="https://github.com/f1tenth-dev/simulator"><b>F1TENTH simulator</b></a>.
+      The F1TENTH simulator mirrors the behavior of autonomous racing scale vehicles. The repository is endowed with the necessary files to run the Nonlinear Model Predictive
+      Control (NMPC) strategy described in <a href="/publications/SMC22.pdf"><b>the paper accepted for publication to the 2022 IEEE International Conference on Systems, Man,
+      and Cybernetics (SMC)</b></a>. The contribution can be also considered as a reference guide for expanding the F1TENTH simulator functionalities by facilitating the
+      integration of the new control algorithms and features. Some simple case studies are considered to evaluate the performance of the retrieve controller. The code is
+      released under Apache license, thus making it available for scientific and educational activities. The platform was developed using Ubuntu 18.04 and the Melodic
+      Morenia version of ROS, but it is also fully compatible with Ubuntu 20.04 along with the Noetic Ninjemys distribution of ROS. Although backwards compatibility is
+      guarantee, i.e., the platform is fully compatible with Melodic Morenia version of ROS and Ubuntu 18.04, such configuration is not recommended since the ROS support
+      is expected to be closed in April 2023.
+	<br>
+
+	  <!-- Place this tag where you want the button to render. STAR -->
+	  <a class="github-button" href="https://github.com/vittoriocataffo/A-Nonlinear-Model-Predictive-Control-Strategy-for-Autonomous-Racing-of-Scale-Vehicles"
+      data-show-count="true" aria-label="Star vittoriocataffo/NMPC Strategies for AV on GitHub">Star</a>
+
+	  <!-- Place this tag where you want the button to render. DOWNLOAD -->
+	  <a class="github-button" href="https://github.com/vittoriocataffo/A-Nonlinear-Model-Predictive-Control-Strategy-for-Autonomous-Racing-of-Scale-Vehicles/archive/master.zip"
+      data-icon="octicon-cloud-download" aria-label="Download vittoriocataffo/NMPC Strategies for AV on GitHub">Download</a>
+
+	  <!-- Place this tag where you want the button to render. SUBSCRIPTION -->
+	  <a class="github-button" href="https://github.com/vittoriocataffo/A-Nonlinear-Model-Predictive-Control-Strategy-for-Autonomous-Racing-of-Scale-Vehicles/subscription"
+      data-show-count="true" aria-label="Subscribe vittoriocataffo/NMPC Strategies for AV on GitHub">Subscribe</a>
+
+	  <!-- Place this tag where you want the button to render. FORK -->
+	  <a class="github-button" href="https://github.com/vittoriocataffo/A-Nonlinear-Model-Predictive-Control-Strategy-for-Autonomous-Racing-of-Scale-Vehicles/fork"
+      data-show-count="true" aria-label="Fork vittoriocataffo/NMPC Strategies for AV on GitHub">Fork</a>
+
+	</font></p>
+
+</div>
+
+<br>
+<br>
+
+<div class="row">
+
+  <p class="lead" style="text-align:justify">
+	<font size="-0.5">
+  <b>Minor contributions on various packages</b> have been done to several open-source projects, such as <a href="https://github.com/AutonomyLab/bebop_autonomy"><b>
+  bebop_autonomy</b></a>, <a href="https://github.com/felixduvallet/ros-travis-integration"><b>ros-travis-integration</b></a>, <a href="https://github.com/ethz-asl/rotors_simulator">
+  <b>RotorS</b></a> (wiki and pull request), <a href="https://github.com/mar4945/Vision-Based-Pure-Pursuing-Algorithm"><b>Vision-Based Path Following Algorithm</b></a>,
+  <a href="https://github.com/ctu-mrs/icuas_2021_sw_architecture_acws"><b>multi-robot inspection and maintenance software architecture</b></a>,
+  <a href="https://github.com/ctu-mrs/pacnav"><b>PACNav</b></a>, <a href="https://github.com/citation-style-language/styles"><b>styles</b></a>,
+  <a href="https://github.com/fmarotta/kaobook"><b>kaobook</b></a>, and <a href="https://github.com/chenyutao36/MATMPC"><b>MATMPC</b></a>. In addition, I have published on Overleaf<sup><a href="#fn2" id="ref2">2</a></sup> under LaTeX Project Public 1.3c
+  license an <a href="https://it.overleaf.com/latex/templates/thesis-at-university-of-sannio/ykxbtqdmyfyh"><b>open-source template</b></a> to help students write their thesis in LaTeX<sup>
+  <a href="#fn3" id="ref3">3</a></sup> and a <a href="https://github.com/gsilano/drawingExamples-LaTeX"><b>collection of draws</b></a> made by using the <i>tikzpicture LaTeX package</i>.
+	</font></p>
+
+	<hr></hr>
+
+	<p class="lead" style="text-align:justify">
+	<font size="-0.5">
+	<sup id="fn1">1. The MED'18 conference report is available on the <a href="https://ieeexplore.ieee.org/document/8667511"><b>IEEE Xplore portal</b></a>.<a href="#ref1"
+	title="MED18 Challenge.">&#x21A9</a></sup>
+	<br/>
+	<sup id="fn2">2. Overleaf is an online LaTeX editor that allows real-time collaboration and online compiling of projects to PDF format.<a href="#ref2" title="Overleaf.">&#x21A9</a></sup>
+	<br/>
+	<sup id="fn3">3. It is aimed for UniSannio's students and was written in Italian.<a href="#ref3" title="Thesis Template.">&#x21A9</a></sup>
+	</font></p>
+
+</div>
+
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+
+	            <p style="text-align: center">
+	              <img align="bottom" src="/images/icons/in.png" class="rss opacity" style="width:15px">
+	              <a target="_blank" href="https://www.linkedin.com/in/giuseppe-silano-235370b5/?locale=en_US" title="LinkedIn">LinkedIn</a>
+	              &nbsp&middot&nbsp
+	              <span class="fa fa-github" aria-hidden="true" title="Github"></span>
+	              <a target="_blank" href="https://github.com/gsilano" title="Github">GitHub</a>
+	              &nbsp&middot&nbsp
+                <span class="fa fa-github" aria-hidden="true" title="Gist"></span>
+	              <a target="_blank" href="https://gist.github.com/gsilano" title="Gist">Gist</a>
+	              &nbsp&middot&nbsp
+	              <img align="bottom" src="/images/icons/ghat.png" class="rss opacity" style="width: 15px;" align="bottom">
+	              <a target="_blank" href="https://scholar.google.it/citations?user=lrTdWB0AAAAJ&hl=en" title="Google Scholar">Google Scholar</a>
+				  &nbsp&middot&nbsp
+	              <img align="bottom" src="/images/icons/researchgate.png" class="rss opacity" style="width:14px">
+	              <a target="_blank" href="https://www.researchgate.net/profile/Giuseppe_Silano" title="Researchgate">Researchgate</a>
+				  &nbsp&middot&nbsp
+	              <span class="fa fa-youtube" aria-hidden="true" title="YouTube"></span>
+	              <a target="_blank" href="https://www.youtube.com/channel/UC33d3qW1EU4jH1fi36Hzc1Q" title="YouTube">YouTube</a>
+				  &nbsp&middot&nbsp
+	              <img align="bottom" src="/images/icons/orcid.png" class="rss opacity" style="width:14px">
+	              <a target="_blank" href="https://orcid.org/0000-0002-6816-6002" title="ORCID">ORCID</a>
+				  &nbsp&middot&nbsp
+                <img align="bottom" src="/images/icons/scopus.png" class="rss opacity" style="width:14px">
+                <a target="_blank" href="https://www.scopus.com/authid/detail.uri?authorId=57191860704" title="Scopus">Scopus</a>
+          &nbsp&middot&nbsp
+	              <img align="bottom" src="/images/icons/webofscience.png" class="rss opacity" style="width:14px">
+	              <a target="_blank" href="https://www.webofscience.com/wos/author/record/1668893" title="WebOfScience">WebOfScience</a>
+	            </p>
+
+	            <p style="text-align: center">
+                © <script>document.write(new Date().getFullYear())</script> Giuseppe Silano. Built with <a href="https://jekyllrb.com/">Jekyll</a>
+                and <a href="http://getbootstrap.com">Bootstrap</a>. Based on a design by <a href="https://www.alex-winkler.com/">Alexander W. Winkler</a>.
+              </p>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BZYYG3QK9P"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-BZYYG3QK9P');
+        </script>
+        <!--  END - Google Analytics  -->
+
+        <!-- Start of Woopra Code -->
+        <script>
+          (function(){
+            var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
+          })("woopra");
+
+          woopra.config({
+              domain: 'giuseppesilano.net'
+          });
+          woopra.track();
+        </script>
+        <!-- End of Woopra Code -->
+
+        <!-- Histats.com  START  (aync)
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4197054,4,0,0,0,00010000']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4197054&101" alt="statistiche web" border="0"></a></noscript>
+         Histats.com  END  -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

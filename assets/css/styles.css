@@ -1,0 +1,42 @@
+.youtube-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+.youtube-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+html,body { margin:0; padding: 0; }
+#main_block {
+  display: block; /* Useless, divs are display:block */
+  width: 100%;    /* Useless, display:block elements are width:100% by default */
+  height: 100%;   /* Fairly useless now, should take children's height */
+  font-size:0;    /* Force space between inline-block elements to be 0 */
+}
+#left_frame {
+  width: 140px;
+}
+#right_frame {
+  width: calc(100% - 140px);
+}
+#left_frame,#right_frame {
+  display: inline-block;
+  box-sizing: border-box;
+  height: calc(100vh - 50px);
+}
+.b_footer {
+  padding: 10px;
+  height: 50px;
+  background-color: blue;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  box-sizing: border-box;
+}
