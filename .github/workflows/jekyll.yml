@@ -37,7 +37,7 @@ jobs:
     #    jekyll_src: 'my_website'
 
     # Specify the target branch (optional)
-    - uses: helaili/jekyll-action@v2
+    - uses: helaili/jekyll-action@v4
       with:
         token: ${{ secrets.MY_SECRET }}
         target_branch: 'master'
