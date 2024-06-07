@@ -15,7 +15,7 @@ jobs:
 
     # Checkout the latest changes
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
     # Use GitHub Actions' cache to shorten build times and decrease load on servers
     - uses: actions/cache@v2
