@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: source
       - name: Setup Ruby
@@ -83,7 +83,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
-        
+
         #pre_build_commands: git config --global http.version HTTP/1.1; apk fetch git-lfs;
         # target_branch: 'master'
 
