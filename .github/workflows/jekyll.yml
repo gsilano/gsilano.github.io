@@ -72,19 +72,20 @@ jobs:
     #    jekyll_src: 'my_website'
     #############################################################################
 
-    # Deployment job
-    deploy:
-      environment:
-        name: github-pages
-        url: ${{ steps.deployment.outputs.page_url }}
-        runs-on: ubuntu-latest
-        pre_build_commands: git config --global http.version HTTP/1.1; apk fetch git-lfs;
-        needs: build
-      steps:
-       - name: Deploy to GitHub Pages
-         id: deployment
-         uses: actions/deploy-pages@v1
-         target_branch: 'master'
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+        
+        #pre_build_commands: git config --global http.version HTTP/1.1; apk fetch git-lfs;
+        # target_branch: 'master'
 
     # Specify the target branch (optional)
     #- uses: helaili/jekyll-action@v2
