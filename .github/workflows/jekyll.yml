@@ -15,7 +15,7 @@ jobs:
 
     # Checkout the latest changes
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v2
 
     # Use GitHub Actions' cache to shorten build times and decrease load on servers
     - uses: actions/cache@v2
@@ -37,7 +37,7 @@ jobs:
     #    jekyll_src: 'my_website'
 
     # Specify the target branch (optional)
-    - uses: helaili/jekyll-action@v2.3.0
+    - uses: helaili/jekyll-action@v2
       with:
         token: ${{ secrets.MY_SECRET }}
         target_branch: 'master'
