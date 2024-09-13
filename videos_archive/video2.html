@@ -11,6 +11,7 @@ title: Video
     <div align="center">
       <table border="0" cellpadding="1" cellspacing="1" height="650" width="1100">
         <tbody>
+          <!-- POINTING THE FILE CONTAINING THE YOUTUBE IDFRAME -->
           {% for video in site.data.videos2 %}
             {% assign remainder = forloop.index0 | modulo: 2 %}
             {% if forloop.first or remainder == 0 %}
@@ -34,11 +35,12 @@ title: Video
       </table>
     </div>
 
-    <!-- NEW PAGE -->
+    <!-- PREVIOUS PAGE -->
     <center>
-    <a href="/video.html">← Previous Page</a>
+    <a href="/videos_archive/video1.html">← Previous Page</a>
     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-    <a href="/videos_archive/video1.html">Next Page →</a>
+    <!-- NEXT PAGE -->
+    <a href="/videos_archive/video3.html">Next Page →</a>
     </center>
 
 
