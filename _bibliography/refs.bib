@@ -1,9 +1,20 @@
+  @ARTICLE{SilanoInvariantControl,
+  title        = {{Readiness Barrier Functions: Forward-Invariant Control Authority for Overactuated Multirotor Allocation}},
+  author       = {{Silano}, Giuseppe},
+  group        = {preprints},
+  preprint     = {publications/2608.16335v1.pdf},
+  doi          = {10.48550/arXiv.2608.16335},
+  link         = {https://arxiv.org/abs/2608.16335},
+  year         = {2026},
+  month        = {8},
+  abstract     = {Allocation schemes that greedily maximize a readiness metric over the actuator fiber bundle of an overactuated multirotor produce commands that jump between disconnected optimal strata, demanding actuator rates no motor can deliver; effort-minimizing schemes are continuous but cannot guarantee that wrench-rate authority stays above any certified level. We reconcile the two by treating authority as a forward-invariant quantity: a control barrier function on the log-determinant of the drag-aware actuator-authority co-metric, enforced at torque level by a quadratic program in the allocation null space. A single design inequality renders the certified set compact and strictly interior to the actuator box, with the readiness cost of any rotor deactivation given in closed form as ln(n/(n−m)) for symmetric designs. Tracking is sacrificed only through an explicit alignment ratio, with wrench error bounded by O(ρ−1/2) and a robust variant handles motor-parameter uncertainty with a closed-form floor shift independent of the airframe matrix. On a hexarotor and a fully-actuated octorotor the closed-form gap matches simulation to machine precision; in the authority-scarce regime greedy maximization violates the certified floor and commits wrench errors up to eighty times larger than the proposed filter, which holds invariance of the certified set at negligible tracking cost.}
+  }
+ 
  @INPROCEEDINGS{SilanoGLOBECOM2026,
   author       = {{Bajja}, Mohammed and {Saliah}, Abdoul Karim A. H. and {El Hammouti}, Hajar and {Bonilla Licea}, Daniel and {Silano}, Giuseppe},
   title        = {{3D Euler-Angle Orientation Control for Two-Ray Fading Mitigation in Maritime Air-to-Sea Communications}},
   booktitle    = {2026 IEEE Global Communications Conference (IEEE GLOBECOM)},
   year         = {2026},
-  publisher    = {IEEE},
   pages        = {},
   month        = {12},
   group        = {conferences},
@@ -12,7 +23,6 @@
   note         = {To Appear},
   abstract     = {Maritime Air-to-Sea links are dominated by a lineof-sight ray and a sea-surface reflected ray whose destructive combination produces deep fades. Existing mitigation strategies optimize Unmanned Aerial Vehicle position or trajectory but leave attitude unexploited. This paper treats the full threedimensional attitude as a physical-layer control variable that shapes the two-ray interference through antenna phase-center displacement. Under small-angle and far-field assumptions, the constructive-interference condition reduces to an affine constraint in the Euler angles and admits a closed-form family of minimum-norm attitude candidates. A differentiable soft minimum rule yields a smooth reference tracked by a constrained Nonlinear Model Predictive Control controller on a fully-actuated tilting multirotor. The proposed scheme increases cumulative throughput by 11.4% over a pitch-only benchmark and 22.2% over a zero-orientation baseline, while preserving trajectory tracking and respecting actuator limits.}
 }
-
 
 @INPROCEEDINGS{Silano2026ICRA_WS_SENSITIVITY_NMPC,
   author       = {{Silano}, Giuseppe and {Saska}, Martin},
@@ -43,15 +53,15 @@
   }
 
  @ARTICLE{SilanoCommAwarenMPCJournal,
- title        = {{Communications-Aware NMPC for Multi-Rotor Aerial Relay Networks Under Jamming Interference}},
- author       = {{Silano}, Giuseppe and {Bonilla Licea}, Daniel and {Liuzza}, Davide and {Franchi}, Antonio and {Saska}, Martin},
- group        = {preprints},
- preprint     = {publications/2603.28467v1.pdf},
- doi          = {10.48550/arXiv.2603.28467},
- link         = {https://arxiv.org/abs/2603.28467},
- year         = {2026},
- month        = {4},
- abstract     = {Multi-Rotor Aerial Vehicles (MRAVs) are increasingly used in communication-dependent missions where connectivity loss directly compromises task execution. Existing anti-jamming strategies often decouple motion from communication, overlooking that link quality depends on vehicle attitude and antenna orientation. In coplanar platforms, "tilt-to-translate" maneuvers can inadvertently align antenna nulls with communication partners, causing severe degradation under interference. This paper presents a modular communications-aware control framework that combines a high-level max-min trajectory generator with an actuator-level Nonlinear Model Predictive Controller (NMPC). The trajectory layer optimizes the weakest link under jamming, while the NMPC enforces vehicle dynamics, actuator limits, and antenna-alignment constraints. Antenna directionality is handled geometrically, avoiding explicit radiation-pattern parametrization. The method is evaluated in a relay scenario with an active jammer and compared across coplanar and tilted-propeller architectures. Results show a near two-order-of-magnitude increase in minimum end-to-end capacity, markedly reducing outage events, with moderate average-capacity gains. Tilted platforms preserve feasibility and link quality, whereas coplanar vehicles show recurrent degradation. These findings indicate that full actuation is a key enabler of reliable communications-aware operation under adversarial directional constraints.} }
+  title        = {{Communications-Aware NMPC for Multi-Rotor Aerial Relay Networks Under Jamming Interference}},
+  author       = {{Silano}, Giuseppe and {Bonilla Licea}, Daniel and {Liuzza}, Davide and {Franchi}, Antonio and {Saska}, Martin},
+  group        = {preprints},
+  preprint     = {publications/2603.28467v1.pdf},
+  doi          = {10.48550/arXiv.2603.28467},
+  link         = {https://arxiv.org/abs/2603.28467},
+  year         = {2026},
+  month        = {4},
+  abstract     = {Multi-Rotor Aerial Vehicles (MRAVs) are increasingly used in communication-dependent missions where connectivity loss directly compromises task execution. Existing anti-jamming strategies often decouple motion from communication, overlooking that link quality depends on vehicle attitude and antenna orientation. In coplanar platforms, "tilt-to-translate" maneuvers can inadvertently align antenna nulls with communication partners, causing severe degradation under interference. This paper presents a modular communications-aware control framework that combines a high-level max-min trajectory generator with an actuator-level Nonlinear Model Predictive Controller (NMPC). The trajectory layer optimizes the weakest link under jamming, while the NMPC enforces vehicle dynamics, actuator limits, and antenna-alignment constraints. Antenna directionality is handled geometrically, avoiding explicit radiation-pattern parametrization. The method is evaluated in a relay scenario with an active jammer and compared across coplanar and tilted-propeller architectures. Results show a near two-order-of-magnitude increase in minimum end-to-end capacity, markedly reducing outage events, with moderate average-capacity gains. Tilted platforms preserve feasibility and link quality, whereas coplanar vehicles show recurrent degradation. These findings indicate that full actuation is a key enabler of reliable communications-aware operation under adversarial directional constraints.} }
 }
 
 @INPROCEEDINGS{SilanoGenzero2024,
