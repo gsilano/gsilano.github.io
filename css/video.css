@@ -1,10 +1,12 @@
 .video {
-  margin-bottom: 50px;
+  margin: 0;
 }
 
 .video h2 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.35;
+  margin: 12px 0 0;
 }
 
 .video-container {
@@ -24,6 +26,50 @@
 
 .video-gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px 24px;
+  margin: 28px 0;
+}
+
+.video-intro {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.video-pagination {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin: 32px 0 12px;
+}
+
+.video-page-button {
+  background: transparent;
+  border: 1px solid #007;
+  border-radius: 4px;
+  color: #007;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 7px 14px;
+}
+
+.video-page-button:hover,
+.video-page-button:focus {
+  background: #007;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .video-gallery {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .video-pagination {
+    gap: 10px;
+  }
 }

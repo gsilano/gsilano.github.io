@@ -7,8 +7,7 @@ title: Video
 
   <div class="youtube-wrapper">
 
-    <p class="lead" style="text-align:justify">
-		<font size="-0.5">
+    <div class="lead video-intro">
     This collection is taken from the following youtube channels:
     <ol>
       <li><a href="https://www.youtube.com/channel/UCfkC5R-RITKtnXedYGpUS8g">Youtube channel of the MRS group</a></li>
@@ -17,45 +16,52 @@ title: Video
       <li><a href="https://www.youtube.com/@BitcrazeVideos">Youtube channel of Bitcraze AB</a></li>
     </ol>
     <strong>Do not forget to watch also the videos attached to the <a href="/publications.html">publications</a>.</strong>
-    </font></p>
-
-    <br>
-
-    <!-- VIDEO LIST -->
-    <div align="center">
-      <table border="0" cellpadding="1" cellspacing="1" height="650" width="1100">
-        <tbody>
-          <!-- POINTING THE FILE CONTAINING THE YOUTUBE IDFRAME -->
-          {% for video in site.data.videos %}
-            {% assign remainder = forloop.index0 | modulo: 2 %}
-            {% if forloop.first or remainder == 0 %}
-              <tr>
-            {% endif %}
-            <td style="width: 385px;">
-              <h4 style="text-align: justify; margin-left: 15px; margin-right: 15px;">
-                <iframe allowfullscreen="" frameborder="0" height="189" src="https://www.youtube.com/embed/{{ video.youtube_id }}" width="336"></iframe>
-              </h4>
-            </td>
-            <td style="width: 358px;">
-              <h4 style="text-align: left;">
-                {{ video.title }}
-              </h4>
-            </td>
-            {% if forloop.last or remainder == 1 %}
-              </tr>
-            {% endif %}
-          {% endfor %}
-        </tbody>
-      </table>
     </div>
 
+    <div class="video-gallery" data-videos-per-page="6">
+      {% for video in site.data.videos %}
+      {% assign video_page = forloop.index0 | divided_by: 6 | plus: 1 %}
+      <article class="video" data-video-page="{{ video_page }}">
+        <div class="video-container">
+          <iframe src="https://www.youtube-nocookie.com/embed/{{ video.youtube_id }}" title="{{ video.title | escape }}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <h2>{{ video.title }}</h2>
+      </article>
+      {% endfor %}
+    </div>
 
-    <br>
-    <br>
+    <nav class="video-pagination" aria-label="Video pages" hidden>
+      <a id="previous-video-page" class="video-page-button" href="/video.html">&larr; Previous Page</a>
+      <span id="video-page-status" aria-live="polite"></span>
+      <a id="next-video-page" class="video-page-button" href="/video.html?page=2">Next Page &rarr;</a>
+    </nav>
 
-    <!-- NEW PAGE -->
-    <center>
-    <a href="/videos_archive/video1.html">Next Page →</a>
-    </center>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var gallery = document.querySelector('.video-gallery[data-videos-per-page]');
+        if (!gallery) return;
+
+        var cards = gallery.querySelectorAll('[data-video-page]');
+        var requestedPage = parseInt(new URLSearchParams(window.location.search).get('page'), 10) || 1;
+        var totalPages = Math.max.apply(null, Array.prototype.map.call(cards, function (card) {
+          return parseInt(card.dataset.videoPage, 10);
+        }));
+        var currentPage = Math.min(Math.max(requestedPage, 1), totalPages);
+        var pagination = document.querySelector('.video-pagination');
+        var previous = document.getElementById('previous-video-page');
+        var next = document.getElementById('next-video-page');
+
+        Array.prototype.forEach.call(cards, function (card) {
+          card.hidden = parseInt(card.dataset.videoPage, 10) !== currentPage;
+        });
+
+        pagination.hidden = totalPages < 2;
+        document.getElementById('video-page-status').textContent = 'Page ' + currentPage + ' of ' + totalPages;
+        previous.hidden = currentPage === 1;
+        next.hidden = currentPage === totalPages;
+        previous.href = currentPage === 2 ? '/video.html' : '/video.html?page=' + (currentPage - 1);
+        next.href = '/video.html?page=' + (currentPage + 1);
+      });
+    </script>
 
 </div>

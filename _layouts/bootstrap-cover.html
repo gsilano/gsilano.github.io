@@ -30,6 +30,9 @@
 
     <!-- My Custom styles for this template -->
     <link rel="stylesheet" type="text/css" href="/css/cover.css"/>
+    {% if page.title == "Video" %}
+    <link rel="stylesheet" type="text/css" href="/css/video.css"/>
+    {% endif %}
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
@@ -151,9 +154,10 @@
 	            </p>
 
 	            <p style="text-align: center">
-                © <script>document.write(new Date().getFullYear())</script> Giuseppe Silano. Built with <a href="https://jekyllrb.com/">Jekyll</a>
+                &copy; <span id="copyright-year"></span> Giuseppe Silano. Built with <a href="https://jekyllrb.com/">Jekyll</a>
                 and <a href="http://getbootstrap.com">Bootstrap</a>. Based on a design by <a href="https://www.alex-winkler.com/">Alexander W. Winkler</a>.
               </p>
+              <script>document.getElementById('copyright-year').textContent = new Date().getFullYear();</script>
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-BZYYG3QK9P"></script>
