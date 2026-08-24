@@ -236,11 +236,20 @@ p { margin-bottom: 1em; }
 }
 
 
-/* https://stackoverflow.com/questions/34984737/display-a-different-logo-on-mobile-and-desktop */
-/* when screen is less than 600px wide
-   show mobile version and hide desktop */
-@media (max-width: 600px) {
-  .desktop {
+/* A compact profile header keeps the home page useful on phones. */
+@media (max-width: 767px) {
+  .profile-panel {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .profile-photo {
+    display: inline-block;
+    width: 150px !important;
+    margin: 0 auto 10px;
+  }
+
+  .profile-contact {
     display: none;
   }
 
