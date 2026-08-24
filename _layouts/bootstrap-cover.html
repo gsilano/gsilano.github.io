@@ -11,6 +11,7 @@
 	<link rel="icon" href="/favicon.png" type="image/x-icon">
 
     <title>Giuseppe Silano - {{ page.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -33,7 +34,9 @@
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:200,400" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
 
 
   </head>
@@ -80,30 +83,30 @@
               </h3>
 
 
-        <ul class="nav masthead-nav">
+        <ul class="nav masthead-nav" aria-label="Primary navigation">
             <li {% if page.title== "Home" %} class="active"{% endif %}>
-                <a href="/index.html">Home</a>
+                <a href="/index.html"{% if page.title == "Home" %} aria-current="page"{% endif %}>Home</a>
             </li>
           		<li {% if page.title== "CV" %} class="active"{% endif %}>
-          			  <a href="/cv.html">CV</a>
+              <a href="/cv.html"{% if page.title == "CV" %} aria-current="page"{% endif %}>CV</a>
           	  </li>
           	  <li {% if page.title== "Research" %} class="active"{% endif %}>
-          			  <a href="/research.html">Research</a>
+              <a href="/research.html"{% if page.title == "Research" %} aria-current="page"{% endif %}>Research</a>
           		</li>
           		<li {% if page.title== "Software"  %} class="active"{% endif %}>
-          	          <a href="/software.html"> Software</a>
+              <a href="/software.html"{% if page.title == "Software" %} aria-current="page"{% endif %}> Software</a>
           	  </li>
           		<li {% if page.title== "Publications"  %} class="active"{% endif %}>
-          		  <a href="/publications.html"> Publications</a>
+              <a href="/publications.html"{% if page.title == "Publications" %} aria-current="page"{% endif %}> Publications</a>
           		</li>
               <li {% if page.title== "Video"  %} class="active"{% endif %}>
-                <a href="/video.html"> Videos</a>
+                <a href="/video.html"{% if page.title == "Video" %} aria-current="page"{% endif %}> Videos</a>
               </li>
               <li {% if page.title== "Research-Projects"  %} class="active"{% endif %}>
-                <a href="/projects.html"> Research Projects</a>
+                <a href="/projects.html"{% if page.title == "Research-Projects" %} aria-current="page"{% endif %}> Research Projects</a>
               </li>
           		<li {% if page.title== "About-the-site"  %} class="active"{% endif %}>
-                            <a href="/info.html"> About the site</a>
+                            <a href="/info.html"{% if page.title == "About-the-site" %} aria-current="page"{% endif %}> About the site</a>
               </li>
 	      </ul>
 

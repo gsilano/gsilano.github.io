@@ -18,7 +18,7 @@ email: giuseppe.silano@rse-web.it
 description: >- # this means to ignore newlines until "baseurl:"
   Personal website of Giuseppe Silano
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://giuseppesilano.net" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://giuseppesilano.net" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  gsilano
 
 # Build settings

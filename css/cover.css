@@ -33,7 +33,30 @@ body {
   color: #000;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.0);
-  font-family: 'Noto Serif JP', sans-serif;
+  font-family: 'Noto Serif', Georgia, serif;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+img,
+embed,
+iframe,
+object,
+video {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+/* Keep long URLs, paper titles, and code references inside the viewport. */
+a,
+td,
+th,
+p,
+li {
+  overflow-wrap: break-word;
 }
 
 /* Trying to replicate medium.com posts */
@@ -115,6 +138,39 @@ p { margin-bottom: 1em; }
   }
 }
 
+@media (max-width: 767px) {
+  .inner {
+    padding: 15px;
+  }
+
+  .masthead-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0 10px 10px;
+  }
+
+  .masthead-nav > li,
+  .masthead-nav > li + li {
+    margin: 0;
+  }
+
+  .masthead-nav > li > a {
+    padding: 10px 8px;
+    font-size: 14px;
+    line-height: 1.25;
+  }
+
+  .lead {
+    font-size: 17px;
+  }
+
+  .mastfoot .inner {
+    padding: 15px;
+  }
+}
+
 
 /*
  * Cover
@@ -186,6 +242,10 @@ p { margin-bottom: 1em; }
 @media (max-width: 600px) {
   .desktop {
     display: none;
+  }
+
+  .well {
+    padding: 14px;
   }
 }
 
