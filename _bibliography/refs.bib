@@ -1,13 +1,25 @@
+  @ARTICLE{SilanoTiltedInvariantControl,
+   title        = {{Tilt as a Certified Resource: Preserving Motor Wrench-Rate Authority on Articulated Multirotors}},
+   author       = {{Silano}, Giuseppe and {Saska}, Martin},
+   group        = {preprints},
+   preprint     = {publications/2609.21580v1.pdf},
+   doi          = {10.48550/arXiv.2609.21580},
+   link         = {https://arxiv.org/abs/2609.21580},
+   year         = {2026},
+   month        = {9},
+   abstract     = {Fully-actuated multirotor aerial vehicles must not only track nominal wrenches but retain the "readiness" to modulate them rapidly under disturbances. Classical effort-minimizing allocators ignore this dynamic limit, whereas maximizing readiness leads to topologically disconnected optimal sheets demanding physically impossible actuator rates. Enforcing a readiness safety floor on fixed-geometry symmetric platforms further encounters a zero-sum degeneracy: motor-speed redistribution cannot improve authority without conceding wrench tracking. This paper uses active morphology to break the degeneracy, treating servo tilt as a geometric resource supplying authority-recovery directions unavailable to static rotors. We construct a configuration-dependent, motor-only readiness certificate - the log-volume of the reachable wrench-rate set - that explicitly excludes servo capacity, preventing a "ghost capacity fallacy" in which the certificate would falsely credit slow mechanical kinematic limits instead of collapsing accurately at motor saturation. The certificate is enforced as a Control Barrier Function (CBF) within a Unified Physical-Command Quadratic Program acting on motor torques and servo setpoints. Closed-loop simulations of an articulated octorotor under severe gust disturbances show classical allocators diverging and uncertified articulated allocators violating the safety floor, while the proposed CBF filter bounds the system state and preserves vehicle authority.}
+  }
+
   @ARTICLE{SilanoInvariantControl,
-  title        = {{Readiness Barrier Functions: Forward-Invariant Control Authority for Overactuated Multirotor Allocation}},
-  author       = {{Silano}, Giuseppe},
-  group        = {preprints},
-  preprint     = {publications/2608.16335v1.pdf},
-  doi          = {10.48550/arXiv.2608.16335},
-  link         = {https://arxiv.org/abs/2608.16335},
-  year         = {2026},
-  month        = {8},
-  abstract     = {Allocation schemes that greedily maximize a readiness metric over the actuator fiber bundle of an overactuated multirotor produce commands that jump between disconnected optimal strata, demanding actuator rates no motor can deliver; effort-minimizing schemes are continuous but cannot guarantee that wrench-rate authority stays above any certified level. We reconcile the two by treating authority as a forward-invariant quantity: a control barrier function on the log-determinant of the drag-aware actuator-authority co-metric, enforced at torque level by a quadratic program in the allocation null space. A single design inequality renders the certified set compact and strictly interior to the actuator box, with the readiness cost of any rotor deactivation given in closed form as ln(n/(n−m)) for symmetric designs. Tracking is sacrificed only through an explicit alignment ratio, with wrench error bounded by O(ρ−1/2) and a robust variant handles motor-parameter uncertainty with a closed-form floor shift independent of the airframe matrix. On a hexarotor and a fully-actuated octorotor the closed-form gap matches simulation to machine precision; in the authority-scarce regime greedy maximization violates the certified floor and commits wrench errors up to eighty times larger than the proposed filter, which holds invariance of the certified set at negligible tracking cost.}
+   title        = {{Readiness Barrier Functions: Forward-Invariant Control Authority for Overactuated Multirotor Allocation}},
+   author       = {{Silano}, Giuseppe},
+   group        = {preprints},
+   preprint     = {publications/2608.16335v1.pdf},
+   doi          = {10.48550/arXiv.2608.16335},
+   link         = {https://arxiv.org/abs/2608.16335},
+   year         = {2026},
+   month        = {8},
+   abstract     = {Allocation schemes that greedily maximize a readiness metric over the actuator fiber bundle of an overactuated multirotor produce commands that jump between disconnected optimal strata, demanding actuator rates no motor can deliver; effort-minimizing schemes are continuous but cannot guarantee that wrench-rate authority stays above any certified level. We reconcile the two by treating authority as a forward-invariant quantity: a control barrier function on the log-determinant of the drag-aware actuator-authority co-metric, enforced at torque level by a quadratic program in the allocation null space. A single design inequality renders the certified set compact and strictly interior to the actuator box, with the readiness cost of any rotor deactivation given in closed form as ln(n/(n−m)) for symmetric designs. Tracking is sacrificed only through an explicit alignment ratio, with wrench error bounded by O(ρ−1/2) and a robust variant handles motor-parameter uncertainty with a closed-form floor shift independent of the airframe matrix. On a hexarotor and a fully-actuated octorotor the closed-form gap matches simulation to machine precision; in the authority-scarce regime greedy maximization violates the certified floor and commits wrench errors up to eighty times larger than the proposed filter, which holds invariance of the certified set at negligible tracking cost.}
   }
  
  @INPROCEEDINGS{SilanoGLOBECOM2026,
@@ -55,13 +67,35 @@
  @ARTICLE{SilanoCommAwarenMPCJournal,
   title        = {{Communications-Aware NMPC for Multi-Rotor Aerial Relay Networks Under Jamming Interference}},
   author       = {{Silano}, Giuseppe and {Bonilla Licea}, Daniel and {Liuzza}, Davide and {Franchi}, Antonio and {Saska}, Martin},
-  group        = {preprints},
+  group        = {journals},
   preprint     = {publications/2603.28467v1.pdf},
-  doi          = {10.48550/arXiv.2603.28467},
+  journal      = {IEEE Transactions on Vehicular Technology},
+  doi          = {10.1109/TVT.2026.3738530},
   link         = {https://arxiv.org/abs/2603.28467},
   year         = {2026},
   month        = {4},
-  abstract     = {Multi-Rotor Aerial Vehicles (MRAVs) are increasingly used in communication-dependent missions where connectivity loss directly compromises task execution. Existing anti-jamming strategies often decouple motion from communication, overlooking that link quality depends on vehicle attitude and antenna orientation. In coplanar platforms, "tilt-to-translate" maneuvers can inadvertently align antenna nulls with communication partners, causing severe degradation under interference. This paper presents a modular communications-aware control framework that combines a high-level max-min trajectory generator with an actuator-level Nonlinear Model Predictive Controller (NMPC). The trajectory layer optimizes the weakest link under jamming, while the NMPC enforces vehicle dynamics, actuator limits, and antenna-alignment constraints. Antenna directionality is handled geometrically, avoiding explicit radiation-pattern parametrization. The method is evaluated in a relay scenario with an active jammer and compared across coplanar and tilted-propeller architectures. Results show a near two-order-of-magnitude increase in minimum end-to-end capacity, markedly reducing outage events, with moderate average-capacity gains. Tilted platforms preserve feasibility and link quality, whereas coplanar vehicles show recurrent degradation. These findings indicate that full actuation is a key enabler of reliable communications-aware operation under adversarial directional constraints.} }
+  status       = {Impact Factor: 7.4.},
+  volume       = {XX},
+  number       = {XX},
+  pages        = {XX-XX},
+  abstract     = {Multi-Rotor Aerial Vehicles (MRAVs) are increasingly used in communication-dependent missions where connectivity loss directly compromises task execution. Existing anti-jamming strategies often decouple motion from communication, overlooking that link quality depends on vehicle attitude and antenna orientation. In coplanar platforms, ``tilt-to-translate'' maneuvers can inadvertently align antenna nulls with communication partners, causing severe degradation under interference. This paper presents a modular communications-aware control approach combining a high-level max-min trajectory generator with an actuator-level Nonlinear Model Predictive Controller (NMPC). The trajectory layer optimizes the \emph{weakest link}---the link with the lower instantaneous Signal-to-Interference-plus-Noise Ratio, which bottlenecks the harmonic-mean end-to-end capacity---while the NMPC enforces vehicle dynamics, actuator limits, and antenna-alignment constraints. Antenna directionality is handled geometrically, avoiding explicit radiation-pattern parametrization. The method is evaluated in a relay scenario with an active jammer and compared across coplanar and tilted-propeller architectures. Results show a near two-order-of-magnitude increase in minimum end-to-end capacity, markedly reducing outage events, with moderate average-capacity gains. Tilted platforms preserve feasibility and link quality, whereas coplanar vehicles show recurrent degradation. These findings indicate that full actuation is a key enabler of reliable communications-aware operation under adversarial directional constraints.}
+}
+
+ @ARTICLE{SilanoRISTVTJournal,
+  title        = {{Orientation-Aware Control and Trajectory Design for Aerial RIS-Assisted Wireless Communications}},
+  author       = {{Saliah}, Abdoul Karim A. H. and {El Hammouti}, Hajar and {Bonilla Licea}, Daniel and {Silano}, Giuseppe},
+  group        = {journals},
+  preprint     = {publications/2609.23157v1.pdf},
+  journal      = {IEEE Transactions on Vehicular Technology},
+  doi          = {10.1109/TVT.2026.3736485},
+  link         = {https://ieeexplore.ieee.org/document/11702547},
+  year         = {2026},
+  month        = {4},
+  status       = {Impact Factor: 7.4.},
+  volume       = {XX},
+  number       = {XX},
+  pages        = {XX-XX},
+  abstract     = {Aerial Reconfigurable Intelligent Surfaces (ARISs) can enhance wireless connectivity in obstructed environments by combining reconfigurable metasurfaces with aerial mobility. However, in practical deployments, the Reconfigurable Intelligent Surface (RIS) is rigidly mounted on a multi-rotor Unmanned Aerial Vehicle (UAV), which creates coupled position-orientation dynamics that directly affect communication quality. Since RIS performance is highly sensitive to orientation, point-mass or orientation-invariant models may lead to optimistic performance estimates. This paper proposes an orientation-aware ARIS framework that explicitly accounts for UAV dynamics, actuation limits, and orientation-dependent channels. The proposed approach combines a communications-guided reference trajectory planner with a Nonlinear Model Predictive Control for dynamically feasible trajectory tracking and favorable RIS orientation, while employing lightweight beamforming and RIS phase-shift updates. Simulations show that accounting for orientation improves user throughput by 13.77%, while the proposed joint communication updates improve network throughput by 28% over phase-shift-only optimization and by at least a factor of 2.5 over beamforming-only optimization. These results highlight the importance of orientation-aware modeling and joint communication-control design in ARIS-assisted wireless systems.}
 }
 
 @INPROCEEDINGS{SilanoGenzero2024,
